@@ -3,6 +3,7 @@
 body {
 	margin: 0 auto;
 	background-image: url('images/background.jpg');
+	background-size: 100%;
 }
 
 /*                          */
@@ -44,7 +45,10 @@ h3 {
 	height: auto;
 	padding: 4px 0 1px 0;
 	background-color: #B98023;
-	border: 2px solid #764012;
+	border-top: 2px solid #764012;
+	border-left: 20px solid #2C89CA;
+	border-right: 20px solid #2C89CA;
+	border-radius: 30px;
 }
 
 #drop {
@@ -75,7 +79,7 @@ h3 {
 #message {
 	display: none;
 	width: 100%;
-	margin: 20px;
+	margin: 50px 0 50px 0;
 	height: 50px;
 	text-align: center;
 	font-size: 25px;
