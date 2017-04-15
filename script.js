@@ -386,7 +386,7 @@ class game {
 		&& ((this.board[11] === this.color) && (this.board[18]) === this.color) 	
 		&& ((this.board[18] === this.color) && (this.board[25]) === this.color)) 
 
-	||    (((this.board[11]  === this.color) && (this.board[18]) === this.color) 		
+	||    (((this.board[11] === this.color) && (this.board[18]) === this.color) 		
 		&& ((this.board[18] === this.color) && (this.board[25]) === this.color) 	
 		&& ((this.board[25] === this.color) && (this.board[32]) === this.color)) 
 
@@ -436,9 +436,9 @@ class game {
 		&& ((this.board[23] === this.color) && (this.board[31]) === this.color) 
 		&& ((this.board[31] === this.color) && (this.board[39])	=== this.color))
 
-	|| 	  (((this.board[0] === this.color) 	&& (this.board[8]) 	=== this.color) 
-		&& ((this.board[8] === this.color) 	&& (this.board[16]) === this.color) 
-		&& ((this.board[16]=== this.color) 	&& (this.board[24])	=== this.color)) 
+	|| 	  (((this.board[0] 	=== this.color) && (this.board[8]) 	=== this.color) 
+		&& ((this.board[8] 	=== this.color) && (this.board[16]) === this.color) 
+		&& ((this.board[16]	=== this.color) && (this.board[24])	=== this.color)) 
 
 	|| 	  (((this.board[8]  === this.color)	&& (this.board[16]) === this.color) 
 		&& ((this.board[16] === this.color) && (this.board[24]) === this.color) 
@@ -448,9 +448,9 @@ class game {
 		&& ((this.board[24] === this.color) && (this.board[32]) === this.color) 
 		&& ((this.board[32] === this.color) && (this.board[40])	=== this.color))
 
-	|| 	  (((this.board[1] === this.color) 	&& (this.board[9]) 	=== this.color) 
-		&& ((this.board[9] === this.color) 	&& (this.board[17]) === this.color) 
-		&& ((this.board[17]=== this.color) 	&& (this.board[25])	=== this.color)) 
+	|| 	  (((this.board[1] 	=== this.color) && (this.board[9]) 	=== this.color) 
+		&& ((this.board[9] 	=== this.color) && (this.board[17]) === this.color) 
+		&& ((this.board[17]	=== this.color) && (this.board[25])	=== this.color)) 
 
 	|| 	  (((this.board[9]  === this.color) && (this.board[17]) === this.color) 
 		&& ((this.board[17] === this.color) && (this.board[25]) === this.color) 
@@ -470,7 +470,57 @@ class game {
 
 	|| 	  (((this.board[3]	=== this.color) && (this.board[11]) === this.color) 
 		&& ((this.board[11] === this.color) && (this.board[19]) === this.color) 
-		&& ((this.board[19] === this.color) && (this.board[27])	=== this.color))) { 
+		&& ((this.board[19] === this.color) && (this.board[27])	=== this.color))
+
+	// Diagonal combinations (Right to Left)
+
+	|| 	  (((this.board[20] === this.color) && (this.board[26]) === this.color) 
+		&& ((this.board[26] === this.color) && (this.board[32]) === this.color) 
+		&& ((this.board[32] === this.color) && (this.board[38])	=== this.color))
+
+	|| 	  (((this.board[13] === this.color) && (this.board[19]) === this.color) 
+		&& ((this.board[19] === this.color) && (this.board[25]) === this.color) 
+		&& ((this.board[25] === this.color) && (this.board[31])	=== this.color))
+
+	|| 	  (((this.board[19] === this.color) && (this.board[25]) === this.color) 
+		&& ((this.board[25] === this.color) && (this.board[31]) === this.color) 
+		&& ((this.board[31] === this.color) && (this.board[37])	=== this.color))
+
+	|| 	  (((this.board[6] 	=== this.color) && (this.board[12]) === this.color) 
+		&& ((this.board[12] === this.color) && (this.board[18]) === this.color) 
+		&& ((this.board[18]	=== this.color) && (this.board[24])	=== this.color)) 
+
+	|| 	  (((this.board[12] === this.color)&& (this.board[18]) 	=== this.color) 
+		&& ((this.board[18] === this.color) && (this.board[24]) === this.color) 
+		&& ((this.board[24] === this.color) && (this.board[30])	=== this.color))
+
+	|| 	  (((this.board[18] === this.color) && (this.board[24]) === this.color) 
+		&& ((this.board[24] === this.color) && (this.board[30]) === this.color) 
+		&& ((this.board[30] === this.color) && (this.board[36])	=== this.color))
+
+	|| 	  (((this.board[5] 	=== this.color) && (this.board[11]) === this.color) 
+		&& ((this.board[11] === this.color) && (this.board[17]) === this.color) 
+		&& ((this.board[17]	=== this.color) && (this.board[23])	=== this.color)) 
+
+	|| 	  (((this.board[11] === this.color) && (this.board[17]) === this.color) 
+		&& ((this.board[17] === this.color) && (this.board[23]) === this.color) 
+		&& ((this.board[23] === this.color) && (this.board[29])	=== this.color)) 
+	
+	|| 	  (((this.board[17] === this.color) && (this.board[23]) === this.color) 
+		&& ((this.board[23] === this.color) && (this.board[29]) === this.color) 
+		&& ((this.board[29] === this.color) && (this.board[35])	=== this.color)) 
+
+	|| 	  (((this.board[4]  === this.color) && (this.board[10]) === this.color) 
+		&& ((this.board[10] === this.color) && (this.board[16]) === this.color) 
+		&& ((this.board[16] === this.color) && (this.board[22])	=== this.color)) 
+
+	|| 	  (((this.board[10] === this.color) && (this.board[16]) === this.color) 
+		&& ((this.board[16] === this.color) && (this.board[22]) === this.color) 
+		&& ((this.board[22] === this.color) && (this.board[28])	=== this.color)) 
+
+	|| 	  (((this.board[3]	=== this.color) && (this.board[9]) 	=== this.color) 
+		&& ((this.board[9] 	=== this.color) && (this.board[15]) === this.color) 
+		&& ((this.board[15] === this.color) && (this.board[21])	=== this.color))) { 
 		document.getElementById('result').innerHTML = this.currentPlayer + ' won!'; 
 		this.end = true; 
 	}
