@@ -12,7 +12,7 @@ body {
 /*                          */
 /*                          */
 
-@import url('https://fonts.googleapis.com/css?family=Philosopher');
+@import url('https://fonts.googleapis.com/css?family=Arsenal|Philosopher');
 
 h1 {
 	text-align: center;
@@ -29,9 +29,10 @@ h2 {
 }
 
 h3 {
-	width: 200px;
+	width: auto;
 	display: inline-block;
-	font-size: 20px;
+	font-size: 26.5px;
+	font-family: 'Arsenal', sans-serif;
 }
 
 /*                          */
@@ -127,7 +128,7 @@ h3 {
 #startButton, #resetButton {
 	width: 120px;
 	height: 40px;
-	margin: 15px;
+	margin: 5px;
 	border: none;
 	background-color: #2C89CA;
 	font-size: 20px;
