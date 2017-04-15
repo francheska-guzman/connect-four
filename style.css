@@ -1,0 +1,114 @@
+/* Francheska Guzman */
+
+body {
+	margin: 0 auto;
+}
+
+/*                          */
+/*                          */
+/*      Heading & Fonts     */
+/*                          */
+/*                          */
+
+h1 {
+	text-align: center;
+}
+
+h2 {
+	display: inline-block;
+	width: 200px;
+	color: #424242;
+}
+
+/*                          */
+/*                          */
+/*        6 x 7 Grid        */
+/*                          */
+/*                          */
+
+#grid6x7 {
+	width: 380px;
+	height: auto;
+	padding: 4px 0 1px 0;
+	background-color: #B98023;
+	border: 2px solid #764012;
+}
+
+#drop {
+	display: inline-block;
+	width: 380px;
+	height: 110px;
+	margin: auto;
+	padding: 0;
+	list-style: none;
+}
+
+#show {
+	opacity: 0;
+}
+
+.center {
+	margin: auto;
+	text-align: center;
+}
+
+.col {
+	display: inline-block;
+	width: auto;
+	margin: 0;
+	padding: 0;
+}
+
+.space {
+	width: 90px;
+	height: 90px;
+	background-color: #D6B92A;
+	list-style: none;
+}
+
+.spaceToken {
+	width: 70px;
+	height: 70px;
+	margin: 0 0 0 10px;
+	border: none;
+	border-radius: 50%;
+	background-color: #FFFFFF;
+}
+
+/*                          */
+/*                          */
+/*     Buttons / Tokens     */
+/*                          */
+/*                          */
+
+#startButton {
+	width: 150px;
+	height: 50px;
+	margin: 20px;
+	border: none;
+	background-color: #2C89CA;
+	font-size: 20px;
+	color: #FFFFFF;
+}
+
+#startButton:hover {
+	background-color: #329CEB;
+}
+
+#a, #b, #c, #d {
+	display: inline-block;
+}
+
+.token {
+	width: 70px;
+	height: 70px;
+	margin: 10px;
+	border: none;
+	border-radius: 50%;
+	background-color: #000000;
+	opacity: 0;
+}
+
+.token:hover {
+	opacity: 1;
+}

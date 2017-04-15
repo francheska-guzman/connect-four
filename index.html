@@ -1,0 +1,55 @@
+<!-- Francheska Guzman -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Connect Four by Francheska</title>
+</head>
+<body>
+	<h1>Connect Four</h1>
+	<div id="show" class="center">
+		<div id="players">
+			<h2>Player 1: Black</h2>
+			<h2>Player 2: Red</h2>
+		</div>
+		<ul id="drop">
+			<li id="a" class="token"></li>
+			<li id="b" class="token"></li>
+			<li id="c" class="token"></li>
+			<li id="d" class="token"></li>
+		</ul>
+	</div>
+	<div id="grid6x7" class="center">
+		<ul class="col">
+			<li id="a1" class="space"><div id="0" class="spaceToken"></div></li>
+			<li id="a2" class="space"><div id="1" class="spaceToken"></div></li>
+			<li id="a3" class="space"><div id="2" class="spaceToken"></div></li>
+			<li id="a4" class="space"><div id="3" class="spaceToken"></div></li>
+		</ul>
+		<ul class="col">
+			<li id="b1" class="space"><div id="4" class="spaceToken"></div></li>
+			<li id="b2" class="space"><div id="5" class="spaceToken"></div></li>
+			<li id="b3" class="space"><div id="6" class="spaceToken"></div></li>
+			<li id="b4" class="space"><div id="7" class="spaceToken"></div></li>
+		</ul>
+		<ul class="col">
+			<li id="c1" class="space"><div id="8" class="spaceToken"></div></li>
+			<li id="c2" class="space"><div id="9" class="spaceToken"></div></li>
+			<li id="c3" class="space"><div id="10" class="spaceToken"></div></li>
+			<li id="c4" class="space"><div id="11" class="spaceToken"></div></li>
+		</ul>
+		<ul class="col">
+			<li id="d1" class="space"><div id="12" class="spaceToken"></div></li>
+			<li id="d2" class="space"><div id="13" class="spaceToken"></div></li>
+			<li id="d3" class="space"><div id="14" class="spaceToken"></div></li>
+			<li id="d4" class="space"><div id="15" class="spaceToken"></div></li>
+		</ul>
+	</div>
+	<div class="center">
+		<button id="startButton" onclick="Game()">Start Game</button>
+		<div id="result"><!-- Display winner or if it's a tie. --></div>
+	</div>
+	<script src="script.js"></script>
+</body>
+</html>
