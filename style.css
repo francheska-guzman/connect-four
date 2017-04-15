@@ -2,6 +2,7 @@
 
 body {
 	margin: 0 auto;
+	background-image: url('images/background.jpg');
 }
 
 /*                          */
@@ -10,18 +11,26 @@ body {
 /*                          */
 /*                          */
 
+@import url('https://fonts.googleapis.com/css?family=Philosopher');
+
 h1 {
 	text-align: center;
+	font-family: 'Philosopher', sans-serif;
+	font-size: 50px;
+	color: #2C89CA;
 }
 
 h2 {
 	text-align: center;
+	font-family: 'Philosopher', sans-serif;
+	font-size: 22px;
+	color: #329CEB;
 }
 
 h3 {
-	display: inline-block;
 	width: 200px;
-	color: #424242;
+	display: inline-block;
+	font-size: 20px;
 }
 
 /*                          */
@@ -41,18 +50,35 @@ h3 {
 #drop {
 	display: inline-block;
 	width: 665px;
-	height: 110px;
+	height: 95px;
 	margin: auto;
 	padding: 0;
 	list-style: none;
+	animation-name: flash;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes flash {
+    0% {
+    	background-color: #A1BFCC;
+    }
+    50% {
+    	background-color: #C0D1D8;
+    }
 }
 
 #show {
-	opacity: 0;
+	display: none;
 }
 
-#result {
-	font-size: 20px;
+#message {
+	display: none;
+	width: 100%;
+	margin: 20px;
+	height: 50px;
+	text-align: center;
+	font-size: 25px;
 }
 
 .center {

@@ -20,8 +20,9 @@ class game {
 
 	init() {
 	console.log('Connect Four initialization.');
-		document.getElementById('show').style.opacity = '1';
+		document.getElementById('show').style.display = 'block';
 		document.getElementById('show').style.transition = '3s';
+		document.getElementById('title').style.display = 'none';
 		document.getElementById('startButton').style.display = 'none';
 		document.getElementById('resetButton').style.display = 'initial';
 		this.end = false,
@@ -55,20 +56,19 @@ class game {
 					if (this.board[b] === null) {
 						for (let n = 5; n >= 0; n -= 1) { // Checking from the bottom to the top of one column.
 							if (document.getElementById(n).style.backgroundColor === '') {
-								if (this.currentPlayer === 'Player 1') {
+								if ((this.currentPlayer === 'Player 1') && (this.end === false)) {
 								document.getElementById(n).style.backgroundColor = '#000000'; // Black
 								this.board[b] = this.color;
 								this.result();
+
 								}
-								else {
+								else if ((this.currentPlayer === 'Player 2') && (this.end === false)) {
 								document.getElementById(n).style.backgroundColor = '#A00000'; // Red
 								this.board[b] = this.color;
 								this.result();
 								};	
 								return; 
-							};
-						};
-				};	};
+				};	};	};	};
 			break;
 
 			case 1: /* Token B & Column B */
@@ -76,20 +76,19 @@ class game {
 					if (this.board[b] === null) {
 						for (let n = 11; n >= 6; n -= 1) { // Checking from the bottom to the top of one column.
 							if (document.getElementById(n).style.backgroundColor === '') {
-								if (this.currentPlayer === 'Player 1') {
+								if ((this.currentPlayer === 'Player 1') && (this.end === false)) {
 								document.getElementById(n).style.backgroundColor = '#000000'; // Black
 								this.board[b] = this.color;
 								this.result();
+
 								}
-								else {
+								else if ((this.currentPlayer === 'Player 2') && (this.end === false)) {
 								document.getElementById(n).style.backgroundColor = '#A00000'; // Red
 								this.board[b] = this.color;
 								this.result();
 								};	
 								return; 
-							};
-						};
-				};	};
+				};	};	};	};
 			break;
 
 			case 2: /* Token C & Column C */
@@ -97,20 +96,19 @@ class game {
 					if (this.board[b] === null) {
 						for (let n = 17; n >= 12; n -= 1) { // Checking from the bottom to the top of one column.
 							if (document.getElementById(n).style.backgroundColor === '') {
-								if (this.currentPlayer === 'Player 1') {
+								if ((this.currentPlayer === 'Player 1') && (this.end === false)) {
 								document.getElementById(n).style.backgroundColor = '#000000'; // Black
 								this.board[b] = this.color;
 								this.result();
+
 								}
-								else {
+								else if ((this.currentPlayer === 'Player 2') && (this.end === false)) {
 								document.getElementById(n).style.backgroundColor = '#A00000'; // Red
 								this.board[b] = this.color;
 								this.result();
 								};	
 								return; 
-							};
-						};
-				};	};
+				};	};	};	};
 			break;
 
 			case 3: /* Token D & Column D */
@@ -118,20 +116,19 @@ class game {
 					if (this.board[b] === null) {
 						for (let n = 23; n >= 18; n -= 1) { // Checking from the bottom to the top of one column.
 							if (document.getElementById(n).style.backgroundColor === '') {
-								if (this.currentPlayer === 'Player 1') {
+								if ((this.currentPlayer === 'Player 1') && (this.end === false)) {
 								document.getElementById(n).style.backgroundColor = '#000000'; // Black
 								this.board[b] = this.color;
 								this.result();
+
 								}
-								else {
+								else if ((this.currentPlayer === 'Player 2') && (this.end === false)) {
 								document.getElementById(n).style.backgroundColor = '#A00000'; // Red
 								this.board[b] = this.color;
 								this.result();
 								};	
 								return; 
-							};
-						};
-				};	};
+				};	};	};	};
 			break;
 
 			case 4: /* Token E & Column E */
@@ -139,20 +136,19 @@ class game {
 					if (this.board[b] === null) {
 						for (let n = 29; n >= 24; n -= 1) { // Checking from the bottom to the top of one column.
 							if (document.getElementById(n).style.backgroundColor === '') {
-								if (this.currentPlayer === 'Player 1') {
+								if ((this.currentPlayer === 'Player 1') && (this.end === false)) {
 								document.getElementById(n).style.backgroundColor = '#000000'; // Black
 								this.board[b] = this.color;
 								this.result();
+
 								}
-								else {
+								else if ((this.currentPlayer === 'Player 2') && (this.end === false)) {
 								document.getElementById(n).style.backgroundColor = '#A00000'; // Red
 								this.board[b] = this.color;
 								this.result();
 								};	
 								return; 
-							};
-						};
-				};	};
+				};	};	};	};
 			break;
 
 			case 5:/* Token F & Column F */
@@ -160,20 +156,19 @@ class game {
 					if (this.board[b] === null) {
 						for (let n = 35; n >= 30; n -= 1) { // Checking from the bottom to the top of one column.
 							if (document.getElementById(n).style.backgroundColor === '') {
-								if (this.currentPlayer === 'Player 1') {
+								if ((this.currentPlayer === 'Player 1') && (this.end === false)) {
 								document.getElementById(n).style.backgroundColor = '#000000'; // Black
 								this.board[b] = this.color;
 								this.result();
+
 								}
-								else {
+								else if ((this.currentPlayer === 'Player 2') && (this.end === false)) {
 								document.getElementById(n).style.backgroundColor = '#A00000'; // Red
 								this.board[b] = this.color;
 								this.result();
 								};	
 								return; 
-							};
-						};
-				};	};
+				};	};	};	};
 			break;
 
 			case 6:/* Token G & Column G */
@@ -181,20 +176,19 @@ class game {
 					if (this.board[b] === null) {
 						for (let n = 41; n >= 36; n -= 1) { // Checking from the bottom to the top of one column.
 							if (document.getElementById(n).style.backgroundColor === '') {
-								if (this.currentPlayer === 'Player 1') {
+								if ((this.currentPlayer === 'Player 1') && (this.end === false)) {
 								document.getElementById(n).style.backgroundColor = '#000000'; // Black
 								this.board[b] = this.color;
 								this.result();
+
 								}
-								else {
+								else if ((this.currentPlayer === 'Player 2') && (this.end === false)) {
 								document.getElementById(n).style.backgroundColor = '#A00000'; // Red
 								this.board[b] = this.color;
 								this.result();
 								};	
 								return; 
-							};
-						};
-				};	};
+				};	};	};	};
 			break;
 
 			default:
@@ -521,13 +515,18 @@ class game {
 	|| 	  (((this.board[3]	=== this.color) && (this.board[9]) 	=== this.color) 
 		&& ((this.board[9] 	=== this.color) && (this.board[15]) === this.color) 
 		&& ((this.board[15] === this.color) && (this.board[21])	=== this.color))) { 
-		document.getElementById('result').innerHTML = this.currentPlayer + ' won!'; 
-		this.end = true; 
+		this.end = true;
+		document.getElementById('drop').style.display = 'none';
+		document.getElementById('player').style.display = 'none';
+		document.getElementById('message').style.display = 'block';
+		document.getElementById('message').innerHTML = "Congratulations " + this.currentPlayer + ", you won!"; 
 	}
 	else if (this.count === 42) {
-		document.getElementById('result').innerHTML = "It's a tie!";
-		document.getElementById('drop').style.display = 'none';
 		this.end = true;
+		document.getElementById('drop').style.display = 'none';
+		document.getElementById('player').style.display = 'none';
+		document.getElementById('message').style.display = 'block';
+		document.getElementById('message').innerHTML = "It's a tie!";
 	}
 		this.switchPlayer();
 	}; // End of result.
@@ -541,6 +540,8 @@ class game {
 			case 'Player 1':
 				this.currentPlayer = 'Player 2';
 				this.color = 'Red';
+				document.getElementById('player').innerHTML = 'Current Player: Red';
+				document.getElementById('player').style.color = '#A00000';
 				document.getElementById('a').style.backgroundColor = '#A00000';
 				document.getElementById('b').style.backgroundColor = '#A00000';
 				document.getElementById('c').style.backgroundColor = '#A00000';
@@ -554,6 +555,8 @@ class game {
 			case 'Player 2':
 				this.currentPlayer = 'Player 1';
 				this.color = 'Black';
+				document.getElementById('player').innerHTML = 'Current Player: Black';
+				document.getElementById('player').style.color = '#000000';
 				document.getElementById('a').style.backgroundColor = '#000000';
 				document.getElementById('b').style.backgroundColor = '#000000';
 				document.getElementById('c').style.backgroundColor = '#000000';
@@ -584,6 +587,5 @@ class game {
 
 		let tokens = document.getElementsByClassName('token');
 		for(token of tokens){
-		  token.addEventListener('click', move);
-
+		  token.addEventListener('click', move)
 	};	};

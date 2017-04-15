@@ -7,12 +7,14 @@
 	<title>Connect Four by Francheska</title>
 </head>
 <body>
+	<div id="title">
 	<h1>Connect Four</h1>
 	<h2>The Classic Vertical Four-In-A-Row Game</h2>
+	</div>
 	<div id="show" class="center">
 		<div id="players">
-			<h3>Player 1: Black</h3>
-			<h3>Player 2: Red</h3>
+			<h3 id='player'>Current Player: Black</h3>
+			<h3 id='message'> <!-- Win or Tie --> </h3>
 		</div>
 		<ul id="drop">
 			<li id="a" class="token"></li>
@@ -85,8 +87,8 @@
 	<div class="center">
 		<input type="button" id="startButton" value="Start" onclick="Game()">
 		<input type="button" id="resetButton" value="Reset" onclick="window.location.reload()">
-		<div id="result"><!-- Display winner or if it's a tie. --></div>
 	</div>
+
 	<script src="script.js"></script>
 </body>
 </html>
