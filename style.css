@@ -31,7 +31,7 @@ h3 {
 /*                          */
 
 #grid6x7 {
-	width: 380px;
+	width: 665px;
 	height: auto;
 	padding: 4px 0 1px 0;
 	background-color: #B98023;
@@ -40,7 +40,7 @@ h3 {
 
 #drop {
 	display: inline-block;
-	width: 380px;
+	width: 665px;
 	height: 110px;
 	margin: auto;
 	padding: 0;
@@ -107,7 +107,7 @@ h3 {
 	display: none;
 }
 
-#a, #b, #c, #d {
+#a, #b, #c, #d, #e, #f, #g {
 	display: inline-block;
 }
 

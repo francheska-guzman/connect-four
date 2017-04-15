@@ -1,6 +1,6 @@
 /* Francheska Guzman */
 class game {
-	constructor(end, count, currentPlayer, board) {
+	constructor(end, count, currentPlayer, color, board) {
 	console.log('Connect Four is connected!');
 
 /*                          */
@@ -10,6 +10,7 @@ class game {
 	this.end = end,
 	this.count = count,
 	this.currentPlayer = currentPlayer,
+	this.color = color,
 	this.board = board
 	}; // End of constructor.
 
@@ -26,10 +27,13 @@ class game {
 		this.end = false,
 		this.count = 0,
 		this.currentPlayer = 'Player 1',
-		this.board = 	[/* 0 */ null, 	/* 1 */  null, /* 2 */ 	null, /* 3 */ 	null,
-						 /* 4 */ null, 	/* 5 */  null, /* 6 */ 	null, /* 7 */ 	null,
-						 /* 8 */ null, 	/* 9 */  null, /* 10 */ null, /* 11 */ 	null,
-						 /* 12 */null, 	/* 13 */ null, /* 14 */ null, /* 15 */ 	null]
+		this.color = 'Black',
+		this.board = 	[/* 0 */  null, /* 1 */  null, 	/* 2 */ null, 	/* 3 */  null, 	/* 4 */  null, 	/* 5 */   null, /* 6 */  null,
+						 /* 7 */  null, /* 8 */  null, 	/* 9 */ null, 	/* 10 */ null, 	/* 11 */ null, 	/* 12 */  null, /* 13 */ null,
+						 /* 14 */ null, /* 15 */ null,  /* 16 */null, 	/* 17 */ null,	/* 18 */ null, 	/* 19 */  null, /* 20 */ null,
+						 /* 21 */ null, /* 22 */ null,  /* 23 */null, 	/* 24 */ null,  /* 25 */ null,  /* 26 */  null, /* 27 */ null,
+						 /* 28 */ null, /* 29 */ null,  /* 30 */null, 	/* 31 */ null, 	/* 32 */ null, 	/* 33 */  null, /* 34 */ null,
+						 /* 35 */ null, /* 36 */ null,  /* 37 */null, 	/* 38 */ null,	/* 39 */ null, 	/* 40 */  null, /* 41 */ null]
 	};
 
 /*                          */
@@ -47,18 +51,18 @@ class game {
 
 			case 0: /* Token A & Column A */
 
-				for (let b = 12; b >= 0; b -= 4){ // this.board array
+				for (let b = 35; b >= 0; b -= 7){ // this.board array
 					if (this.board[b] === null) {
-						for (let n = 3; n >= 0; n -= 1) { // Checking from the bottom to the top of one column.
+						for (let n = 5; n >= 0; n -= 1) { // Checking from the bottom to the top of one column.
 							if (document.getElementById(n).style.backgroundColor === '') {
 								if (this.currentPlayer === 'Player 1') {
 								document.getElementById(n).style.backgroundColor = '#000000'; // Black
-								this.board[b] = 'Black';
+								this.board[b] = this.color;
 								this.result();
 								}
 								else {
 								document.getElementById(n).style.backgroundColor = '#A00000'; // Red
-								this.board[b] = 'Red';
+								this.board[b] = this.color;
 								this.result();
 								};	
 								return; 
@@ -68,18 +72,18 @@ class game {
 			break;
 
 			case 1: /* Token B & Column B */
-				for (let b = 13; b >= 1; b -= 4){ // this.board array
+				for (let b = 36; b >= 1; b -= 7){ // this.board array
 					if (this.board[b] === null) {
-						for (let n = 7; n >= 4; n -= 1) { // Checking from the bottom to the top of one column.
+						for (let n = 11; n >= 6; n -= 1) { // Checking from the bottom to the top of one column.
 							if (document.getElementById(n).style.backgroundColor === '') {
 								if (this.currentPlayer === 'Player 1') {
 								document.getElementById(n).style.backgroundColor = '#000000'; // Black
-								this.board[b] = 'Black';
+								this.board[b] = this.color;
 								this.result();
 								}
 								else {
 								document.getElementById(n).style.backgroundColor = '#A00000'; // Red
-								this.board[b] = 'Red';
+								this.board[b] = this.color;
 								this.result();
 								};	
 								return; 
@@ -89,18 +93,18 @@ class game {
 			break;
 
 			case 2: /* Token C & Column C */
-				for (let b = 14; b >= 2; b -= 4){ // this.board array
+				for (let b = 37; b >= 2; b -= 7){ // this.board array
 					if (this.board[b] === null) {
-						for (let n = 11; n >= 8; n -= 1) { // Checking from the bottom to the top of one column.
+						for (let n = 17; n >= 12; n -= 1) { // Checking from the bottom to the top of one column.
 							if (document.getElementById(n).style.backgroundColor === '') {
 								if (this.currentPlayer === 'Player 1') {
 								document.getElementById(n).style.backgroundColor = '#000000'; // Black
-								this.board[b] = 'Black';
+								this.board[b] = this.color;
 								this.result();
 								}
 								else {
 								document.getElementById(n).style.backgroundColor = '#A00000'; // Red
-								this.board[b] = 'Red';
+								this.board[b] = this.color;
 								this.result();
 								};	
 								return; 
@@ -110,18 +114,81 @@ class game {
 			break;
 
 			case 3: /* Token D & Column D */
-				for (let b = 15; b >= 3; b -= 4){ // this.board array
+				for (let b = 38; b >= 3; b -= 7){ // this.board array
 					if (this.board[b] === null) {
-						for (let n = 15; n >= 12; n -= 1) { // Checking from the bottom to the top of one column.
+						for (let n = 23; n >= 18; n -= 1) { // Checking from the bottom to the top of one column.
 							if (document.getElementById(n).style.backgroundColor === '') {
 								if (this.currentPlayer === 'Player 1') {
 								document.getElementById(n).style.backgroundColor = '#000000'; // Black
-								this.board[b] = 'Black';
+								this.board[b] = this.color;
 								this.result();
 								}
 								else {
 								document.getElementById(n).style.backgroundColor = '#A00000'; // Red
-								this.board[b] = 'Red';
+								this.board[b] = this.color;
+								this.result();
+								};	
+								return; 
+							};
+						};
+				};	};
+			break;
+
+			case 4: /* Token E & Column E */
+				for (let b = 39; b >= 4; b -= 7){ // this.board array
+					if (this.board[b] === null) {
+						for (let n = 29; n >= 24; n -= 1) { // Checking from the bottom to the top of one column.
+							if (document.getElementById(n).style.backgroundColor === '') {
+								if (this.currentPlayer === 'Player 1') {
+								document.getElementById(n).style.backgroundColor = '#000000'; // Black
+								this.board[b] = this.color;
+								this.result();
+								}
+								else {
+								document.getElementById(n).style.backgroundColor = '#A00000'; // Red
+								this.board[b] = this.color;
+								this.result();
+								};	
+								return; 
+							};
+						};
+				};	};
+			break;
+
+			case 5:/* Token F & Column F */
+				for (let b = 40; b >= 5; b -= 7){ // this.board array
+					if (this.board[b] === null) {
+						for (let n = 35; n >= 30; n -= 1) { // Checking from the bottom to the top of one column.
+							if (document.getElementById(n).style.backgroundColor === '') {
+								if (this.currentPlayer === 'Player 1') {
+								document.getElementById(n).style.backgroundColor = '#000000'; // Black
+								this.board[b] = this.color;
+								this.result();
+								}
+								else {
+								document.getElementById(n).style.backgroundColor = '#A00000'; // Red
+								this.board[b] = this.color;
+								this.result();
+								};	
+								return; 
+							};
+						};
+				};	};
+			break;
+
+			case 6:/* Token G & Column G */
+				for (let b = 41; b >= 6; b -= 7){ // this.board array
+					if (this.board[b] === null) {
+						for (let n = 41; n >= 36; n -= 1) { // Checking from the bottom to the top of one column.
+							if (document.getElementById(n).style.backgroundColor === '') {
+								if (this.currentPlayer === 'Player 1') {
+								document.getElementById(n).style.backgroundColor = '#000000'; // Black
+								this.board[b] = this.color;
+								this.result();
+								}
+								else {
+								document.getElementById(n).style.backgroundColor = '#A00000'; // Red
+								this.board[b] = this.color;
 								this.result();
 								};	
 								return; 
@@ -134,7 +201,6 @@ class game {
 			console.log('Not a token.');
 			break;
 			};
-		this.count += 1;
 		this.result();
 		};
 	  };
@@ -147,29 +213,272 @@ class game {
 	result() { 
 	console.log('Checking if the player is a winner or tie... Otherwise, continue the game.');
 	console.log(this.board);
-	
+
 	this.count += 1;
 
-		if 	// Horizontal combinations
-			((((this.board[0] === this.board[1]) && (this.board[1] === this.board[2]) && (this.board[2] === this.board[3])) === ("Black" || "Red")) ||
-			(((this.board[4] === this.board[5]) && (this.board[5] === this.board[6]) && (this.board[6] === this.board[7]))  === ("Black" || "Red")) ||
-			(((this.board[8] === this.board[9]) && (this.board[9] === this.board[10]) && (this.board[10] === this.board[11]))  === ("Black" || "Red")) ||
-			(((this.board[12] === this.board[13]) && (this.board[13] === this.board[14]) && (this.board[14] === this.board[15]))  === ("Black" || "Red")) ||
-			// Vertical combinations
-			(((this.board[0] === this.board[4]) && (this.board[4] === this.board[8]) && (this.board[8] === this.board[12]))  === ("Black" || "Red")) ||
-			(((this.board[1] === this.board[5]) && (this.board[5] === this.board[9]) && (this.board[9] === this.board[13]))  === ("Black" || "Red")) ||
-			(((this.board[2] === this.board[6]) && (this.board[6] === this.board[10]) && (this.board[10] === this.board[14]))  === ("Black" || "Red")) ||
-			(((this.board[3] === this.board[7]) && (this.board[7] === this.board[11]) && (this.board[11] === this.board[15]))  === ("Black" || "Red")) ||
-			// Diagonal combinations
-			(((this.board[0] === this.board[5]) && (this.board[5] === this.board[10]) && (this.board[10] === this.board[15]))  === ("Black" || "Red")) ||
-			(((this.board[3] === this.board[6]) && (this.board[6] === this.board[9]) && (this.board[9] === this.board[12]))  === ("Black" || "Red"))) {
-			document.getElementById('result').innerHTML = this.currentPlayer + ' won!';
-			this.end = true;
-			}
-		else if (this.count === 16) {
-			document.getElementById('result').innerHTML = "It's a tie!";
-			this.end = true;
-		}
+	// Horizontal combinations Row 1
+
+	if 	 ((((this.board[0] 	=== this.color) && (this.board[1]) 	=== this.color)
+		&& ((this.board[1] 	=== this.color) && (this.board[2])  === this.color) 		
+		&& ((this.board[2] 	=== this.color) && (this.board[3]) 	=== this.color))	
+
+	|| 	  (((this.board[1] 	=== this.color) && (this.board[2]) 	=== this.color) 	
+		&& ((this.board[2] 	=== this.color) && (this.board[3]) 	=== this.color) 	
+		&& ((this.board[3] 	=== this.color) && (this.board[4]) 	=== this.color))
+
+	||    (((this.board[2] 	=== this.color) && (this.board[3]) 	=== this.color) 	
+		&& ((this.board[3] 	=== this.color) && (this.board[4]) 	=== this.color) 	
+		&& ((this.board[4]	=== this.color) && (this.board[5]) 	=== this.color))	
+
+	|| 	  (((this.board[3] 	=== this.color) && (this.board[4]) 	=== this.color) 	
+		&& ((this.board[4] 	=== this.color) && (this.board[5]) 	=== this.color) 	
+		&& ((this.board[5] 	=== this.color) && (this.board[6]) 	=== this.color))
+	
+	// Horizontal combinations Row 2
+
+	|| 	  (((this.board[7] 	=== this.color) && (this.board[8]) 	=== this.color) 	
+		&& ((this.board[8] 	=== this.color) && (this.board[9]) 	=== this.color) 	
+		&& ((this.board[9] 	=== this.color) && (this.board[10]) === this.color))
+
+	||    (((this.board[8] 	=== this.color) && (this.board[9]) 	=== this.color) 	
+		&& ((this.board[9] 	=== this.color) && (this.board[10]) === this.color) 	
+		&& ((this.board[10] === this.color) && (this.board[11]) === this.color))	
+
+	|| 	  (((this.board[9] 	=== this.color) && (this.board[10]) === this.color) 	
+		&& ((this.board[10] === this.color) && (this.board[11]) === this.color) 	
+		&& ((this.board[11] === this.color) && (this.board[12]) === this.color))
+
+	|| 	  (((this.board[10] === this.color) && (this.board[11]) === this.color) 	
+		&& ((this.board[11] === this.color) && (this.board[12]) === this.color) 	
+		&& ((this.board[12] === this.color) && (this.board[13]) === this.color))
+
+	// Horizontal combinations Row 3
+
+	|| 	  (((this.board[14] === this.color) && (this.board[15]) === this.color) 	
+		&& ((this.board[15] === this.color) && (this.board[16]) === this.color) 	
+		&& ((this.board[16] === this.color) && (this.board[17]) === this.color))
+
+	|| 	  (((this.board[15] === this.color) && (this.board[16]) === this.color) 	
+		&& ((this.board[16] === this.color) && (this.board[17]) === this.color) 	
+		&& ((this.board[17] === this.color) && (this.board[18]) === this.color))
+
+	|| 	  (((this.board[16] === this.color) && (this.board[17]) === this.color) 	
+		&& ((this.board[17] === this.color) && (this.board[18]) === this.color) 	
+		&& ((this.board[18] === this.color) && (this.board[19]) === this.color))
+
+	|| 	  (((this.board[17] === this.color) && (this.board[18]) === this.color) 	
+		&& ((this.board[18] === this.color) && (this.board[19]) === this.color) 	
+		&& ((this.board[19] === this.color) && (this.board[20]) === this.color))
+
+	// Horizontal combinations Row 4
+
+	|| 	  (((this.board[21] === this.color) && (this.board[22]) === this.color) 	
+		&& ((this.board[22] === this.color) && (this.board[23]) === this.color) 	
+		&& ((this.board[23] === this.color) && (this.board[24]) === this.color))
+
+	|| 	  (((this.board[22] === this.color) && (this.board[23]) === this.color) 	
+		&& ((this.board[23] === this.color) && (this.board[24]) === this.color) 	
+		&& ((this.board[24] === this.color) && (this.board[25]) === this.color))
+
+	|| 	  (((this.board[23] === this.color) && (this.board[24]) === this.color) 	
+		&& ((this.board[24] === this.color) && (this.board[25]) === this.color) 	
+		&& ((this.board[25] === this.color) && (this.board[26]) === this.color))
+
+	|| 	  (((this.board[24] === this.color) && (this.board[25]) === this.color) 	
+		&& ((this.board[25] === this.color) && (this.board[26]) === this.color) 	
+		&& ((this.board[26] === this.color) && (this.board[27]) === this.color))
+
+	// Horizontal combinations Row 5
+
+	|| 	  (((this.board[28] === this.color) && (this.board[29]) === this.color) 	
+		&& ((this.board[29] === this.color) && (this.board[30]) === this.color) 	
+		&& ((this.board[30] === this.color) && (this.board[31]) === this.color))
+
+	|| 	  (((this.board[29] === this.color) && (this.board[30]) === this.color) 	
+		&& ((this.board[30] === this.color) && (this.board[31]) === this.color) 	
+		&& ((this.board[31] === this.color) && (this.board[32]) === this.color))
+
+	|| 	  (((this.board[30] === this.color) && (this.board[31]) === this.color) 	
+		&& ((this.board[31] === this.color) && (this.board[32]) === this.color) 	
+		&& ((this.board[32] === this.color) && (this.board[33]) === this.color))
+
+	|| 	  (((this.board[31] === this.color) && (this.board[32]) === this.color) 	
+		&& ((this.board[32] === this.color) && (this.board[33]) === this.color) 	
+		&& ((this.board[33] === this.color) && (this.board[34]) === this.color))
+
+	// Horizontal combinations Row 6
+
+	|| 	  (((this.board[35] === this.color) && (this.board[36]) === this.color) 	
+		&& ((this.board[36] === this.color) && (this.board[37]) === this.color) 	
+		&& ((this.board[37] === this.color) && (this.board[38]) === this.color))
+
+	|| 	  (((this.board[36] === this.color) && (this.board[37]) === this.color) 	
+		&& ((this.board[37] === this.color) && (this.board[38]) === this.color) 	
+		&& ((this.board[38] === this.color) && (this.board[39]) === this.color))
+
+	|| 	  (((this.board[37] === this.color) && (this.board[38]) === this.color) 	
+		&& ((this.board[38] === this.color) && (this.board[39]) === this.color) 	
+		&& ((this.board[39] === this.color) && (this.board[40]) === this.color))
+
+	|| 	  (((this.board[38] === this.color) && (this.board[39]) === this.color) 	
+		&& ((this.board[39] === this.color) && (this.board[40]) === this.color) 	
+		&& ((this.board[40] === this.color) && (this.board[41]) === this.color))
+
+	// Vertical combinations Column 1
+
+	||    (((this.board[0]  === this.color) && (this.board[7])  === this.color) 		
+		&& ((this.board[7]  === this.color) && (this.board[14]) === this.color) 	
+		&& ((this.board[14] === this.color) && (this.board[21]) === this.color)) 
+
+	||    (((this.board[7]  === this.color) && (this.board[14]) === this.color) 		
+		&& ((this.board[14] === this.color) && (this.board[21]) === this.color) 	
+		&& ((this.board[21] === this.color) && (this.board[28]) === this.color)) 
+
+	||    (((this.board[14] === this.color) && (this.board[21]) === this.color) 	
+		&& ((this.board[21] === this.color) && (this.board[28]) === this.color) 	
+		&& ((this.board[28] === this.color)	&& (this.board[35])	=== this.color))
+
+	// Vertical combinations Column 2
+
+	||    (((this.board[1]  === this.color) && (this.board[8])  === this.color) 		
+		&& ((this.board[8]  === this.color) && (this.board[15]) === this.color) 	
+		&& ((this.board[15] === this.color) && (this.board[22]) === this.color)) 
+
+	||    (((this.board[8]  === this.color) && (this.board[15]) === this.color) 		
+		&& ((this.board[15] === this.color) && (this.board[22]) === this.color) 	
+		&& ((this.board[22] === this.color) && (this.board[29]) === this.color)) 
+
+	||    (((this.board[15] === this.color) && (this.board[22]) === this.color) 	
+		&& ((this.board[22] === this.color) && (this.board[29]) === this.color) 	
+		&& ((this.board[29] === this.color)	&& (this.board[36])	=== this.color))
+
+	// Vertical combinations Column 3
+
+	||    (((this.board[2]  === this.color) && (this.board[9])  === this.color) 		
+		&& ((this.board[9]  === this.color) && (this.board[16]) === this.color) 	
+		&& ((this.board[16] === this.color) && (this.board[23]) === this.color)) 
+
+	||    (((this.board[9]  === this.color) && (this.board[16]) === this.color) 		
+		&& ((this.board[16] === this.color) && (this.board[23]) === this.color) 	
+		&& ((this.board[23] === this.color) && (this.board[30]) === this.color)) 
+
+	||    (((this.board[16] === this.color) && (this.board[23]) === this.color) 	
+		&& ((this.board[23] === this.color) && (this.board[30]) === this.color) 	
+		&& ((this.board[30] === this.color)	&& (this.board[37])	=== this.color))
+
+	// Vertical combinations Column 4
+
+	||    (((this.board[3]  === this.color) && (this.board[10])  === this.color) 		
+		&& ((this.board[10] === this.color) && (this.board[17]) === this.color) 	
+		&& ((this.board[17] === this.color) && (this.board[24]) === this.color)) 
+
+	||    (((this.board[10] === this.color) && (this.board[17]) === this.color) 		
+		&& ((this.board[17] === this.color) && (this.board[24]) === this.color) 	
+		&& ((this.board[24] === this.color) && (this.board[31]) === this.color)) 
+
+	||    (((this.board[17] === this.color) && (this.board[24]) === this.color) 	
+		&& ((this.board[24] === this.color) && (this.board[31]) === this.color) 	
+		&& ((this.board[31] === this.color)	&& (this.board[38])	=== this.color))
+
+	// Vertical combinations Column 5
+
+	||    (((this.board[4]  === this.color) && (this.board[11]) === this.color) 		
+		&& ((this.board[11] === this.color) && (this.board[18]) === this.color) 	
+		&& ((this.board[18] === this.color) && (this.board[25]) === this.color)) 
+
+	||    (((this.board[11]  === this.color) && (this.board[18]) === this.color) 		
+		&& ((this.board[18] === this.color) && (this.board[25]) === this.color) 	
+		&& ((this.board[25] === this.color) && (this.board[32]) === this.color)) 
+
+	||    (((this.board[18] === this.color) && (this.board[25]) === this.color) 	
+		&& ((this.board[25] === this.color) && (this.board[32]) === this.color) 	
+		&& ((this.board[32] === this.color)	&& (this.board[39])	=== this.color))
+
+	// Vertical combinations Column 6
+
+	||    (((this.board[5]  === this.color) && (this.board[12]) === this.color) 		
+		&& ((this.board[12] === this.color) && (this.board[19]) === this.color) 	
+		&& ((this.board[19] === this.color) && (this.board[26]) === this.color)) 
+
+	||    (((this.board[12] === this.color) && (this.board[19]) === this.color) 		
+		&& ((this.board[19] === this.color) && (this.board[26]) === this.color) 	
+		&& ((this.board[26] === this.color) && (this.board[33]) === this.color)) 
+
+	||    (((this.board[19] === this.color) && (this.board[26]) === this.color) 	
+		&& ((this.board[26] === this.color) && (this.board[33]) === this.color) 	
+		&& ((this.board[33] === this.color)	&& (this.board[40])	=== this.color))
+
+	// Vertical combinations Column 7
+
+	||    (((this.board[6]  === this.color) && (this.board[13]) === this.color) 		
+		&& ((this.board[13] === this.color) && (this.board[20]) === this.color) 	
+		&& ((this.board[20] === this.color) && (this.board[27]) === this.color)) 
+
+	||    (((this.board[13] === this.color) && (this.board[20]) === this.color) 		
+		&& ((this.board[20] === this.color) && (this.board[27]) === this.color) 	
+		&& ((this.board[27] === this.color) && (this.board[34]) === this.color)) 
+
+	||    (((this.board[20] === this.color) && (this.board[27]) === this.color) 	
+		&& ((this.board[27] === this.color) && (this.board[34]) === this.color) 	
+		&& ((this.board[34] === this.color)	&& (this.board[41])	=== this.color))
+
+	// Diagonal combinations (Left to Right)
+
+	|| 	  (((this.board[14] === this.color) && (this.board[22]) === this.color) 
+		&& ((this.board[22] === this.color) && (this.board[30]) === this.color) 
+		&& ((this.board[30] === this.color) && (this.board[38])	=== this.color))
+
+	|| 	  (((this.board[7]  === this.color) && (this.board[15]) === this.color) 
+		&& ((this.board[15] === this.color) && (this.board[23]) === this.color) 
+		&& ((this.board[23] === this.color) && (this.board[31])	=== this.color))
+
+	|| 	  (((this.board[15] === this.color) && (this.board[23]) === this.color) 
+		&& ((this.board[23] === this.color) && (this.board[31]) === this.color) 
+		&& ((this.board[31] === this.color) && (this.board[39])	=== this.color))
+
+	|| 	  (((this.board[0] === this.color) 	&& (this.board[8]) 	=== this.color) 
+		&& ((this.board[8] === this.color) 	&& (this.board[16]) === this.color) 
+		&& ((this.board[16]=== this.color) 	&& (this.board[24])	=== this.color)) 
+
+	|| 	  (((this.board[8]  === this.color)	&& (this.board[16]) === this.color) 
+		&& ((this.board[16] === this.color) && (this.board[24]) === this.color) 
+		&& ((this.board[24] === this.color) && (this.board[32])	=== this.color))
+
+	|| 	  (((this.board[16] === this.color) && (this.board[24]) === this.color) 
+		&& ((this.board[24] === this.color) && (this.board[32]) === this.color) 
+		&& ((this.board[32] === this.color) && (this.board[40])	=== this.color))
+
+	|| 	  (((this.board[1] === this.color) 	&& (this.board[9]) 	=== this.color) 
+		&& ((this.board[9] === this.color) 	&& (this.board[17]) === this.color) 
+		&& ((this.board[17]=== this.color) 	&& (this.board[25])	=== this.color)) 
+
+	|| 	  (((this.board[9]  === this.color) && (this.board[17]) === this.color) 
+		&& ((this.board[17] === this.color) && (this.board[25]) === this.color) 
+		&& ((this.board[25] === this.color) && (this.board[33])	=== this.color)) 
+	
+	|| 	  (((this.board[17] === this.color) && (this.board[25]) === this.color) 
+		&& ((this.board[25] === this.color) && (this.board[33]) === this.color) 
+		&& ((this.board[33] === this.color) && (this.board[41])	=== this.color)) 
+
+	|| 	  (((this.board[2]  === this.color) && (this.board[10]) === this.color) 
+		&& ((this.board[10] === this.color) && (this.board[18]) === this.color) 
+		&& ((this.board[18] === this.color) && (this.board[26])	=== this.color)) 
+
+	|| 	  (((this.board[10] === this.color) && (this.board[18]) === this.color) 
+		&& ((this.board[18] === this.color) && (this.board[26]) === this.color) 
+		&& ((this.board[26] === this.color) && (this.board[34])	=== this.color)) 
+
+	|| 	  (((this.board[3]	=== this.color) && (this.board[11]) === this.color) 
+		&& ((this.board[11] === this.color) && (this.board[19]) === this.color) 
+		&& ((this.board[19] === this.color) && (this.board[27])	=== this.color))) { 
+		document.getElementById('result').innerHTML = this.currentPlayer + ' won!'; 
+		this.end = true; 
+	}
+	else if (this.count === 42) {
+		document.getElementById('result').innerHTML = "It's a tie!";
+		document.getElementById('drop').style.display = 'none';
+		this.end = true;
+	}
 		this.switchPlayer();
 	}; // End of result.
 
@@ -181,19 +490,27 @@ class game {
 		switch(this.currentPlayer) {
 			case 'Player 1':
 				this.currentPlayer = 'Player 2';
+				this.color = 'Red';
 				document.getElementById('a').style.backgroundColor = '#A00000';
 				document.getElementById('b').style.backgroundColor = '#A00000';
 				document.getElementById('c').style.backgroundColor = '#A00000';
 				document.getElementById('d').style.backgroundColor = '#A00000';
+				document.getElementById('e').style.backgroundColor = '#A00000';
+				document.getElementById('f').style.backgroundColor = '#A00000';
+				document.getElementById('g').style.backgroundColor = '#A00000';
 				console.log('Next turn: ' + this.currentPlayer + ' (Red!)');
 				break;
 
 			case 'Player 2':
 				this.currentPlayer = 'Player 1';
+				this.color = 'Black';
 				document.getElementById('a').style.backgroundColor = '#000000';
 				document.getElementById('b').style.backgroundColor = '#000000';
 				document.getElementById('c').style.backgroundColor = '#000000';
 				document.getElementById('d').style.backgroundColor = '#000000';
+				document.getElementById('e').style.backgroundColor = '#000000';
+				document.getElementById('f').style.backgroundColor = '#000000';
+				document.getElementById('g').style.backgroundColor = '#000000';
 				console.log('Next turn: ' + this.currentPlayer + ' (Black!)');
 				break;
 
