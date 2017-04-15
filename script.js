@@ -21,6 +21,8 @@ class game {
 	console.log('Connect Four initialization.');
 		document.getElementById('show').style.opacity = '1';
 		document.getElementById('show').style.transition = '3s';
+		document.getElementById('startButton').style.display = 'none';
+		document.getElementById('resetButton').style.display = 'initial';
 		this.end = false,
 		this.count = 0,
 		this.currentPlayer = 'Player 1',
@@ -149,24 +151,24 @@ class game {
 	this.count += 1;
 
 		if 	// Horizontal combinations
-			((((this.board[0] === this.board[1]) && (this.board[1] === this.board[2]) && (this.board[2] === this.board[3])) !== null) ||
-			(((this.board[4] === this.board[5]) && (this.board[5] === this.board[6]) && (this.board[6] === this.board[7])) !== null) ||
-			(((this.board[8] === this.board[9]) && (this.board[9] === this.board[10]) && (this.board[10] === this.board[11])) !== null) ||
-			(((this.board[12] === this.board[13]) && (this.board[13] === this.board[14]) && (this.board[14] === this.board[15])) !== null) ||
+			((((this.board[0] === this.board[1]) && (this.board[1] === this.board[2]) && (this.board[2] === this.board[3])) === ("Black" || "Red")) ||
+			(((this.board[4] === this.board[5]) && (this.board[5] === this.board[6]) && (this.board[6] === this.board[7]))  === ("Black" || "Red")) ||
+			(((this.board[8] === this.board[9]) && (this.board[9] === this.board[10]) && (this.board[10] === this.board[11]))  === ("Black" || "Red")) ||
+			(((this.board[12] === this.board[13]) && (this.board[13] === this.board[14]) && (this.board[14] === this.board[15]))  === ("Black" || "Red")) ||
 			// Vertical combinations
-			(((this.board[0] === this.board[4]) && (this.board[4] === this.board[8]) && (this.board[8] === this.board[12])) !== null) ||
-			(((this.board[1] === this.board[5]) && (this.board[5] === this.board[9]) && (this.board[9] === this.board[13])) !== null) ||
-			(((this.board[2] === this.board[6]) && (this.board[6] === this.board[10]) && (this.board[10] === this.board[14])) !== null) ||
-			(((this.board[3] === this.board[7]) && (this.board[7] === this.board[11]) && (this.board[11] === this.board[15])) !== null) ||
+			(((this.board[0] === this.board[4]) && (this.board[4] === this.board[8]) && (this.board[8] === this.board[12]))  === ("Black" || "Red")) ||
+			(((this.board[1] === this.board[5]) && (this.board[5] === this.board[9]) && (this.board[9] === this.board[13]))  === ("Black" || "Red")) ||
+			(((this.board[2] === this.board[6]) && (this.board[6] === this.board[10]) && (this.board[10] === this.board[14]))  === ("Black" || "Red")) ||
+			(((this.board[3] === this.board[7]) && (this.board[7] === this.board[11]) && (this.board[11] === this.board[15]))  === ("Black" || "Red")) ||
 			// Diagonal combinations
-			(((this.board[0] === this.board[5]) && (this.board[5] === this.board[10]) && (this.board[10] === this.board[15])) !== null) ||
-			(((this.board[3] === this.board[6]) && (this.board[6] === this.board[9]) && (this.board[9] === this.board[12])) !== null)) {
+			(((this.board[0] === this.board[5]) && (this.board[5] === this.board[10]) && (this.board[10] === this.board[15]))  === ("Black" || "Red")) ||
+			(((this.board[3] === this.board[6]) && (this.board[6] === this.board[9]) && (this.board[9] === this.board[12]))  === ("Black" || "Red"))) {
 			document.getElementById('result').innerHTML = this.currentPlayer + ' won!';
-			this.end = null;
+			this.end = true;
 			}
 		else if (this.count === 16) {
 			document.getElementById('result').innerHTML = "It's a tie!";
-			this.end = null;
+			this.end = true;
 		}
 		this.switchPlayer();
 	}; // End of result.
@@ -216,4 +218,5 @@ class game {
 		let tokens = document.getElementsByClassName('token');
 		for(token of tokens){
 		  token.addEventListener('click', move);
+
 	};	};
