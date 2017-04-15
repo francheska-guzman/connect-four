@@ -1,22 +1,21 @@
 /* Francheska Guzman */
 class game {
-	constructor(end, count, currentPlayer, color, board) {
+	constructor(end, count, currentPlayer, board) {
 	console.log('Connect Four is connected!');
 
-	/*                          */
-	/*         Attributes       */
-	/*                          */
+/*                          */
+/*         Attributes       */
+/*                          */
 
 	this.end = end,
 	this.count = count,
 	this.currentPlayer = currentPlayer,
-	this.color = color,
 	this.board = board
 	}; // End of constructor.
 
-	/*                          */
-	/*       Initialization     */
-	/*                          */
+/*                          */
+/*       Initialization     */
+/*                          */
 
 	init() {
 	console.log('Connect Four initialization.');
@@ -25,16 +24,15 @@ class game {
 		this.end = false,
 		this.count = 0,
 		this.currentPlayer = 'Player 1',
-		this.color = 'Black',
-		this.board = [[0,  true, 'color'], [1,  true, 'color'],  [2,  true, 'color'], [3,  true,  'color'],
-					  [4,  true, 'color'], [5,  true, 'color'],  [6,  true, 'color'], [7,  true,  'color'],
-					  [8,  true, 'color'], [9,  true, 'color'],  [10, true, 'color'], [11, true, 'color'],
-					  [12, true, 'color'], [13, true, 'color'],  [14, true, 'color'], [15, true, 'color']]
+		this.board = 	[/* 0 */ null, 	/* 1 */  null, /* 2 */ 	null, /* 3 */ 	null,
+						 /* 4 */ null, 	/* 5 */  null, /* 6 */ 	null, /* 7 */ 	null,
+						 /* 8 */ null, 	/* 9 */  null, /* 10 */ null, /* 11 */ 	null,
+						 /* 12 */null, 	/* 13 */ null, /* 14 */ null, /* 15 */ 	null]
 	};
 
-	/*                          */
-	/*           Moves          */
-	/*                          */
+/*                          */
+/*           Moves          */
+/*                          */
 
 	moveToken() {
 	console.log(this.currentPlayer + ' is playing.');
@@ -44,103 +42,143 @@ class game {
 	for (let i = 0; i < token.length; i += 1) {
 		if (token[i] == target) {
 			switch(token[i].value + i) {
-			case 0:
-				for (let n = 3; n >= 0; n -= 1) { // Checking from the bottom to the top of one column.
-					if (this.currentPlayer === 'Player 1') {
-					document.getElementById(n).style.backgroundColor = '#000000'; // Black
-					}
-					else {
-					document.getElementById(n).style.backgroundColor = '#A00000'; // Red
-					};
-				};
+
+			case 0: /* Token A & Column A */
+
+				for (let b = 12; b >= 0; b -= 4){ // this.board array
+					if (this.board[b] === null) {
+						for (let n = 3; n >= 0; n -= 1) { // Checking from the bottom to the top of one column.
+							if (document.getElementById(n).style.backgroundColor === '') {
+								if (this.currentPlayer === 'Player 1') {
+								document.getElementById(n).style.backgroundColor = '#000000'; // Black
+								this.board[b] = 'Black';
+								this.result();
+								}
+								else {
+								document.getElementById(n).style.backgroundColor = '#A00000'; // Red
+								this.board[b] = 'Red';
+								this.result();
+								};	
+								return; 
+							};
+						};
+				};	};
 			break;
 
-			case 1:
-				for (let n = 7; n >= 4; n -= 1) { // Checking from the bottom to the top of one column.
-					if (this.currentPlayer === 'Player 1') {
-					document.getElementById(n).style.backgroundColor = '#000000'; // Black
-					}
-					else {
-					document.getElementById(n).style.backgroundColor = '#A00000'; // Red
-					};
-				};
+			case 1: /* Token B & Column B */
+				for (let b = 13; b >= 1; b -= 4){ // this.board array
+					if (this.board[b] === null) {
+						for (let n = 7; n >= 4; n -= 1) { // Checking from the bottom to the top of one column.
+							if (document.getElementById(n).style.backgroundColor === '') {
+								if (this.currentPlayer === 'Player 1') {
+								document.getElementById(n).style.backgroundColor = '#000000'; // Black
+								this.board[b] = 'Black';
+								this.result();
+								}
+								else {
+								document.getElementById(n).style.backgroundColor = '#A00000'; // Red
+								this.board[b] = 'Red';
+								this.result();
+								};	
+								return; 
+							};
+						};
+				};	};
 			break;
 
-			case 2:
-				for (let n = 11; n >= 8; n -= 1) { // Checking from the bottom to the top of one column.
-					if (this.currentPlayer === 'Player 1') {
-					document.getElementById(n).style.backgroundColor = '#000000'; // Black
-					}
-					else {
-					document.getElementById(n).style.backgroundColor = '#A00000'; // Red
-					};
-				};
+			case 2: /* Token C & Column C */
+				for (let b = 14; b >= 2; b -= 4){ // this.board array
+					if (this.board[b] === null) {
+						for (let n = 11; n >= 8; n -= 1) { // Checking from the bottom to the top of one column.
+							if (document.getElementById(n).style.backgroundColor === '') {
+								if (this.currentPlayer === 'Player 1') {
+								document.getElementById(n).style.backgroundColor = '#000000'; // Black
+								this.board[b] = 'Black';
+								this.result();
+								}
+								else {
+								document.getElementById(n).style.backgroundColor = '#A00000'; // Red
+								this.board[b] = 'Red';
+								this.result();
+								};	
+								return; 
+							};
+						};
+				};	};
 			break;
 
-			case 3:
-				for (let n = 15; n >= 12; n -= 1) { // Checking from the bottom to the top of one column.
-					if (this.currentPlayer === 'Player 1') {
-					document.getElementById(n).style.backgroundColor = '#000000'; // Black
-					}
-					else {
-					document.getElementById(n).style.backgroundColor = '#A00000'; // Red
-					};
-				};
+			case 3: /* Token D & Column D */
+				for (let b = 15; b >= 3; b -= 4){ // this.board array
+					if (this.board[b] === null) {
+						for (let n = 15; n >= 12; n -= 1) { // Checking from the bottom to the top of one column.
+							if (document.getElementById(n).style.backgroundColor === '') {
+								if (this.currentPlayer === 'Player 1') {
+								document.getElementById(n).style.backgroundColor = '#000000'; // Black
+								this.board[b] = 'Black';
+								this.result();
+								}
+								else {
+								document.getElementById(n).style.backgroundColor = '#A00000'; // Red
+								this.board[b] = 'Red';
+								this.result();
+								};	
+								return; 
+							};
+						};
+				};	};
 			break;
 
 			default:
 			console.log('Not a token.');
 			break;
-			}
+			};
 		this.count += 1;
 		this.result();
 		};
 	  };
 	};
 
-	/*                          */
-	/*          Result          */
-	/*                          */
+/*                          */
+/*          Result          */
+/*                          */
 
 	result() { 
 	console.log('Checking if the player is a winner or tie... Otherwise, continue the game.');
+	console.log(this.board);
+	
+	this.count += 1;
+
 		if 	// Horizontal combinations
-			(((this.board[0, false, this.color] === this.board[1, false, this.color]) && (this.board[1, false, this.color] === this.board[2, false, this.color]) && (this.board[2, false, this.color] === this.board[3, false, this.color])) ||
-			((this.board[4, false, this.color] === this.board[5, false, this.color]) && (this.board[5, false, this.color] === this.board[6, false, this.color]) && (this.board[6, false, this.color] === this.board[7, false, this.color])) ||
-			((this.board[8, false, this.color] === this.board[9, false, this.color]) && (this.board[9, false, this.color] === this.board[10, false, this.color]) && (this.board[10, false, this.color] === this.board[11, false, this.color])) ||
-			((this.board[12, false, this.color] === this.board[13, false, this.color]) && (this.board[13, false, this.color] === this.board[14, false, this.color]) && (this.board[14, false, this.color] === this.board[15, false, this.color])) ||
+			((((this.board[0] === this.board[1]) && (this.board[1] === this.board[2]) && (this.board[2] === this.board[3])) !== null) ||
+			(((this.board[4] === this.board[5]) && (this.board[5] === this.board[6]) && (this.board[6] === this.board[7])) !== null) ||
+			(((this.board[8] === this.board[9]) && (this.board[9] === this.board[10]) && (this.board[10] === this.board[11])) !== null) ||
+			(((this.board[12] === this.board[13]) && (this.board[13] === this.board[14]) && (this.board[14] === this.board[15])) !== null) ||
 			// Vertical combinations
-			((this.board[0, false, this.color] === this.board[4, false, this.color]) && (this.board[4, false, this.color] === this.board[8, false, this.color]) && (this.board[8, false, this.color] === this.board[12, false, this.color])) ||
-			((this.board[1, false, this.color] === this.board[5, false, this.color]) && (this.board[5, false, this.color] === this.board[9, false, this.color]) && (this.board[9, false, this.color] === this.board[13, false, this.color])) ||
-			((this.board[2, false, this.color] === this.board[6, false, this.color]) && (this.board[6, false, this.color] === this.board[10, false, this.color]) && (this.board[10, false, this.color] === this.board[14, false, this.color])) ||
-			((this.board[3, false, this.color] === this.board[7, false, this.color]) && (this.board[7, false, this.color] === this.board[11, false, this.color]) && (this.board[11, false, this.color] === this.board[15, false, this.color])) ||
+			(((this.board[0] === this.board[4]) && (this.board[4] === this.board[8]) && (this.board[8] === this.board[12])) !== null) ||
+			(((this.board[1] === this.board[5]) && (this.board[5] === this.board[9]) && (this.board[9] === this.board[13])) !== null) ||
+			(((this.board[2] === this.board[6]) && (this.board[6] === this.board[10]) && (this.board[10] === this.board[14])) !== null) ||
+			(((this.board[3] === this.board[7]) && (this.board[7] === this.board[11]) && (this.board[11] === this.board[15])) !== null) ||
 			// Diagonal combinations
-			((this.board[0, false, this.color] === this.board[5, false, this.color]) && (this.board[5, false, this.color] === this.board[10, false, this.color]) && (this.board[10, false, this.color] === this.board[15, false, this.color])) ||
-			((this.board[3, false, this.color] === this.board[6, false, this.color]) && (this.board[6, false, this.color] === this.board[9, false, this.color]) && (this.board[9, false, this.color] === this.board[12, false, this.color]))) 
-			{
+			(((this.board[0] === this.board[5]) && (this.board[5] === this.board[10]) && (this.board[10] === this.board[15])) !== null) ||
+			(((this.board[3] === this.board[6]) && (this.board[6] === this.board[9]) && (this.board[9] === this.board[12])) !== null)) {
 			document.getElementById('result').innerHTML = this.currentPlayer + ' won!';
-			this.end = true;
-			this.switchPlayer(); // Continue the game.
-			} 
-		else if (this.count === 12) {
-			document.getElementById('result').innerHTML = "Tie!";
-			this.end = true;
-			this.switchPlayer(); // Continue the game.
+			this.end = null;
+			}
+		else if (this.count === 16) {
+			document.getElementById('result').innerHTML = "It's a tie!";
+			this.end = null;
 		}
-		else {
-			this.switchPlayer(); // Continue the game.
-		}
+		this.switchPlayer();
 	}; // End of result.
 
-	/*                          */
-	/*   Turns (change player)  */
-	/*                          */
+/*                          */
+/*   Turns (change player)  */
+/*                          */
 
 	switchPlayer() {
 		switch(this.currentPlayer) {
 			case 'Player 1':
 				this.currentPlayer = 'Player 2';
-				this.color = 'Red';
 				document.getElementById('a').style.backgroundColor = '#A00000';
 				document.getElementById('b').style.backgroundColor = '#A00000';
 				document.getElementById('c').style.backgroundColor = '#A00000';
@@ -150,7 +188,6 @@ class game {
 
 			case 'Player 2':
 				this.currentPlayer = 'Player 1';
-				this.color = 'Black';
 				document.getElementById('a').style.backgroundColor = '#000000';
 				document.getElementById('b').style.backgroundColor = '#000000';
 				document.getElementById('c').style.backgroundColor = '#000000';
@@ -161,18 +198,22 @@ class game {
 			default:
 				console.log('Not a player!');
 				break;
-};	};	};
+};	};	}; // End of Class.
 
-function Game() {
+/*                          */
+/*        Start Button      */
+/*                          */
 
-	let ConnectFour = new game;
-	ConnectFour.init();
+	function Game() {
 
-	let move = function() {
-		ConnectFour.moveToken();
-	};
+		let ConnectFour = new game;
+		ConnectFour.init();
 
-	let tokens = document.getElementsByClassName('token');
-	for(token of tokens){
-	  token.addEventListener('click', move);
-};	};
+		let move = function() {
+			ConnectFour.moveToken();
+		};
+
+		let tokens = document.getElementsByClassName('token');
+		for(token of tokens){
+		  token.addEventListener('click', move);
+	};	};
