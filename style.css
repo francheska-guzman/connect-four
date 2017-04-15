@@ -151,8 +151,9 @@ h3 {
 	height: 60px;
 	margin: 10px;
 	border: none;
-	border-radius: 50%;
 	background-color: #000000;
+	background: radial-gradient(#282727, #141313, #000000);
+	border-radius: 50%;
 	opacity: 0;
 }
 
