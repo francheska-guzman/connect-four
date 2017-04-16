@@ -77,7 +77,7 @@ class game {
 				// User can't insert a token, if the column 0 is full.
 				if (this.board[0] !== null) {
 				token[0].removeEventListener('click', move);
-				}
+				};
 			break;
 
 			case 1: /* Token B & Column B */
@@ -104,7 +104,7 @@ class game {
 				// User can't insert a token, if the column 1 is full.
 				if (this.board[1] !== null) {
 				token[1].removeEventListener('click', move);
-				}
+				};
 			break;
 
 			case 2: /* Token C & Column C */
@@ -131,7 +131,7 @@ class game {
 				// User can't insert a token, if the column 2 is full.
 				if (this.board[2] !== null) {
 				token[2].removeEventListener('click', move);
-				}
+				};
 			break;
 
 			case 3: /* Token D & Column D */
@@ -158,7 +158,7 @@ class game {
 				// User can't insert a token, if the column 3 is full.
 				if (this.board[3] !== null) {
 				token[3].removeEventListener('click', move);
-				}
+				};
 			break;
 
 			case 4: /* Token E & Column E */
@@ -185,7 +185,7 @@ class game {
 				// User can't insert a token, if the column 4 is full.
 				if (this.board[4] !== null) {
 				token[4].removeEventListener('click', move);
-				}
+				};
 			break;
 
 			case 5:/* Token F & Column F */
@@ -212,7 +212,7 @@ class game {
 				// User can't insert a token, if the column 5 is full.
 				if (this.board[5] !== null) {
 				token[5].removeEventListener('click', move);
-				}
+				};
 			break;
 
 			case 6:/* Token G & Column G */
@@ -239,7 +239,7 @@ class game {
 				// User can't insert a token, if the column 6 is full.
 				if (this.board[6] !== null) {
 				token[6].removeEventListener('click', move);
-				}
+				};
 			break;
 
 			default:
@@ -591,15 +591,15 @@ class game {
 			case 'Player 1':
 				this.currentPlayer = 'Player 2';
 				this.color = 'Red';
-				document.getElementById('player').innerHTML = 'Player 2 (Red)';
-				document.getElementById('player').style.color = '#720303';
-				document.getElementById('a').style.backgroundColor = '#720303';
-				document.getElementById('b').style.backgroundColor = '#720303';
-				document.getElementById('c').style.backgroundColor = '#720303';
-				document.getElementById('d').style.backgroundColor = '#720303';
-				document.getElementById('e').style.backgroundColor = '#720303';
-				document.getElementById('f').style.backgroundColor = '#720303';
-				document.getElementById('g').style.backgroundColor = '#720303';
+				document.getElementById('player').innerHTML = 'Player 2 (Red!)';
+				document.getElementById('player').style.color = '#AA0808';
+				document.getElementById('a').style.backgroundColor = '#AA0808';
+				document.getElementById('b').style.backgroundColor = '#AA0808';
+				document.getElementById('c').style.backgroundColor = '#AA0808';
+				document.getElementById('d').style.backgroundColor = '#AA0808';
+				document.getElementById('e').style.backgroundColor = '#AA0808';
+				document.getElementById('f').style.backgroundColor = '#AA0808';
+				document.getElementById('g').style.backgroundColor = '#AA0808';
 				document.getElementById('a').style.background = 'radial-gradient(#720303, #720303, #AA0808)';
 				document.getElementById('b').style.background = 'radial-gradient(#720303, #720303, #AA0808)';
 				document.getElementById('c').style.background = 'radial-gradient(#720303, #720303, #AA0808)';
@@ -613,7 +613,7 @@ class game {
 			case 'Player 2':
 				this.currentPlayer = 'Player 1';
 				this.color = 'Black';
-				document.getElementById('player').innerHTML = 'Player 1 (Black)';
+				document.getElementById('player').innerHTML = 'Player 1 (Black!)';
 				document.getElementById('player').style.color = '#000000';
 				document.getElementById('a').style.backgroundColor = '#000000';
 				document.getElementById('b').style.backgroundColor = '#000000';
