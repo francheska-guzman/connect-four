@@ -4,6 +4,7 @@ body {
 	margin: 0 auto;
 	background: radial-gradient(#FFFFFF, #FFFFFF, #99BBD8); 
 	background-repeat: no-repeat; 
+	background-size: 100%;
 }
 
 /*                          */
@@ -306,7 +307,6 @@ input {
 	width: 30px;
 	height: 30px;
 	margin: 5px 6px 5px 6px;
-	opacity: 1;
 	}
 
 	@keyframes changeSize {
