@@ -74,6 +74,10 @@ class game {
 									};	
 								return; 
 				};	};	};	};
+				// User can't insert a token, if the column 0 is full.
+				if (this.board[0] !== null) {
+				token[0].removeEventListener('click', move);
+				}
 			break;
 
 			case 1: /* Token B & Column B */
@@ -97,6 +101,10 @@ class game {
 									};	
 								return; 
 				};	};	};	};
+				// User can't insert a token, if the column 1 is full.
+				if (this.board[1] !== null) {
+				token[1].removeEventListener('click', move);
+				}
 			break;
 
 			case 2: /* Token C & Column C */
@@ -120,6 +128,10 @@ class game {
 									};	
 								return; 
 				};	};	};	};
+				// User can't insert a token, if the column 2 is full.
+				if (this.board[2] !== null) {
+				token[2].removeEventListener('click', move);
+				}
 			break;
 
 			case 3: /* Token D & Column D */
@@ -143,6 +155,10 @@ class game {
 									};	
 								return; 
 				};	};	};	};
+				// User can't insert a token, if the column 3 is full.
+				if (this.board[3] !== null) {
+				token[3].removeEventListener('click', move);
+				}
 			break;
 
 			case 4: /* Token E & Column E */
@@ -166,6 +182,10 @@ class game {
 									};	
 								return; 
 				};	};	};	};
+				// User can't insert a token, if the column 4 is full.
+				if (this.board[4] !== null) {
+				token[4].removeEventListener('click', move);
+				}
 			break;
 
 			case 5:/* Token F & Column F */
@@ -189,6 +209,10 @@ class game {
 									};	
 								return; 
 				};	};	};	};
+				// User can't insert a token, if the column 5 is full.
+				if (this.board[5] !== null) {
+				token[5].removeEventListener('click', move);
+				}
 			break;
 
 			case 6:/* Token G & Column G */
@@ -212,6 +236,10 @@ class game {
 									};	
 								return; 
 				};	};	};	};
+				// User can't insert a token, if the column 6 is full.
+				if (this.board[6] !== null) {
+				token[6].removeEventListener('click', move);
+				}
 			break;
 
 			default:
