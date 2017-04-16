@@ -56,19 +56,20 @@ class game {
 					if (this.board[b] === null) {
 						for (let n = 5; n >= 0; n -= 1) { // Checking from the bottom to the top of one column.
 							if (document.getElementById(n).style.backgroundColor === '') {
-								if ((this.currentPlayer === 'Player 1') && (this.end === false)) {
-								document.getElementById(n).style.background = 'radial-gradient(#282727, #141313, #000000)'; // Black Gradient	
-								document.getElementById(n).style.backgroundColor = '#000000'; // Black
-								this.board[b] = this.color;
-								this.result();
-
-								}
-								else if ((this.currentPlayer === 'Player 2') && (this.end === false)) {
-								document.getElementById(n).style.background = 'radial-gradient(#A00000, #5e0101, #560303)'; // Red Gradient	
-								document.getElementById(n).style.backgroundColor = '#A00000'; // Red
-								this.board[b] = this.color;
-								this.result();
-								};	
+								let soundEffect = new Audio ('audio/token.mp3');
+								soundEffect.play();
+									if ((this.currentPlayer === 'Player 1') && (this.end === false)) {
+									document.getElementById(n).style.background = 'radial-gradient(#282727, #141313, #000000)'; // Black Gradient	
+									document.getElementById(n).style.backgroundColor = '#000000'; // Black
+									this.board[b] = this.color;
+									this.result();
+									}
+									else if ((this.currentPlayer === 'Player 2') && (this.end === false)) {
+									document.getElementById(n).style.background = 'radial-gradient(#A00000, #5e0101, #560303)'; // Red Gradient	
+									document.getElementById(n).style.backgroundColor = '#A00000'; // Red
+									this.board[b] = this.color;
+									this.result();
+									};	
 								return; 
 				};	};	};	};
 			break;
@@ -78,19 +79,20 @@ class game {
 					if (this.board[b] === null) {
 						for (let n = 11; n >= 6; n -= 1) { // Checking from the bottom to the top of one column.
 							if (document.getElementById(n).style.backgroundColor === '') {
-								if ((this.currentPlayer === 'Player 1') && (this.end === false)) {
-								document.getElementById(n).style.background = 'radial-gradient(#282727, #141313, #000000)'; // Black Gradient	
-								document.getElementById(n).style.backgroundColor = '#000000'; // Black
-								this.board[b] = this.color;
-								this.result();
-
-								}
-								else if ((this.currentPlayer === 'Player 2') && (this.end === false)) {
-								document.getElementById(n).style.background = 'radial-gradient(#A00000, #5e0101, #560303)'; // Red Gradient	
-								document.getElementById(n).style.backgroundColor = '#A00000'; // Red
-								this.board[b] = this.color;
-								this.result();
-								};	
+								let soundEffect = new Audio ('audio/token.mp3');
+								soundEffect.play();
+									if ((this.currentPlayer === 'Player 1') && (this.end === false)) {
+									document.getElementById(n).style.background = 'radial-gradient(#282727, #141313, #000000)'; // Black Gradient	
+									document.getElementById(n).style.backgroundColor = '#000000'; // Black
+									this.board[b] = this.color;
+									this.result();
+									}
+									else if ((this.currentPlayer === 'Player 2') && (this.end === false)) {
+									document.getElementById(n).style.background = 'radial-gradient(#A00000, #5e0101, #560303)'; // Red Gradient	
+									document.getElementById(n).style.backgroundColor = '#A00000'; // Red
+									this.board[b] = this.color;
+									this.result();
+									};	
 								return; 
 				};	};	};	};
 			break;
@@ -100,19 +102,20 @@ class game {
 					if (this.board[b] === null) {
 						for (let n = 17; n >= 12; n -= 1) { // Checking from the bottom to the top of one column.
 							if (document.getElementById(n).style.backgroundColor === '') {
-								if ((this.currentPlayer === 'Player 1') && (this.end === false)) {
-								document.getElementById(n).style.background = 'radial-gradient(#282727, #141313, #000000)'; // Black Gradient	
-								document.getElementById(n).style.backgroundColor = '#000000'; // Black
-								this.board[b] = this.color;
-								this.result();
-
-								}
-								else if ((this.currentPlayer === 'Player 2') && (this.end === false)) {
-								document.getElementById(n).style.background = 'radial-gradient(#A00000, #5e0101, #560303)'; // Red Gradient	
-								document.getElementById(n).style.backgroundColor = '#A00000'; // Red
-								this.board[b] = this.color;
-								this.result();
-								};	
+								let soundEffect = new Audio ('audio/token.mp3');
+								soundEffect.play();
+									if ((this.currentPlayer === 'Player 1') && (this.end === false)) {
+									document.getElementById(n).style.background = 'radial-gradient(#282727, #141313, #000000)'; // Black Gradient	
+									document.getElementById(n).style.backgroundColor = '#000000'; // Black
+									this.board[b] = this.color;
+									this.result();
+									}
+									else if ((this.currentPlayer === 'Player 2') && (this.end === false)) {
+									document.getElementById(n).style.background = 'radial-gradient(#A00000, #5e0101, #560303)'; // Red Gradient	
+									document.getElementById(n).style.backgroundColor = '#A00000'; // Red
+									this.board[b] = this.color;
+									this.result();
+									};	
 								return; 
 				};	};	};	};
 			break;
@@ -122,19 +125,20 @@ class game {
 					if (this.board[b] === null) {
 						for (let n = 23; n >= 18; n -= 1) { // Checking from the bottom to the top of one column.
 							if (document.getElementById(n).style.backgroundColor === '') {
-								if ((this.currentPlayer === 'Player 1') && (this.end === false)) {
-								document.getElementById(n).style.background = 'radial-gradient(#282727, #141313, #000000)'; // Black Gradient	
-								document.getElementById(n).style.backgroundColor = '#000000'; // Black
-								this.board[b] = this.color;
-								this.result();
-
-								}
-								else if ((this.currentPlayer === 'Player 2') && (this.end === false)) {
-								document.getElementById(n).style.background = 'radial-gradient(#A00000, #5e0101, #560303)'; // Red Gradient	
-								document.getElementById(n).style.backgroundColor = '#A00000'; // Red
-								this.board[b] = this.color;
-								this.result();
-								};	
+								let soundEffect = new Audio ('audio/token.mp3');
+								soundEffect.play();
+									if ((this.currentPlayer === 'Player 1') && (this.end === false)) {
+									document.getElementById(n).style.background = 'radial-gradient(#282727, #141313, #000000)'; // Black Gradient	
+									document.getElementById(n).style.backgroundColor = '#000000'; // Black
+									this.board[b] = this.color;
+									this.result();
+									}
+									else if ((this.currentPlayer === 'Player 2') && (this.end === false)) {
+									document.getElementById(n).style.background = 'radial-gradient(#A00000, #5e0101, #560303)'; // Red Gradient	
+									document.getElementById(n).style.backgroundColor = '#A00000'; // Red
+									this.board[b] = this.color;
+									this.result();
+									};	
 								return; 
 				};	};	};	};
 			break;
@@ -144,19 +148,20 @@ class game {
 					if (this.board[b] === null) {
 						for (let n = 29; n >= 24; n -= 1) { // Checking from the bottom to the top of one column.
 							if (document.getElementById(n).style.backgroundColor === '') {
-								if ((this.currentPlayer === 'Player 1') && (this.end === false)) {
-								document.getElementById(n).style.background = 'radial-gradient(#282727, #141313, #000000)'; // Black Gradient	
-								document.getElementById(n).style.backgroundColor = '#000000'; // Black
-								this.board[b] = this.color;
-								this.result();
-
-								}
-								else if ((this.currentPlayer === 'Player 2') && (this.end === false)) {
-								document.getElementById(n).style.background = 'radial-gradient(#A00000, #5e0101, #560303)'; // Red Gradient	
-								document.getElementById(n).style.backgroundColor = '#A00000'; // Red
-								this.board[b] = this.color;
-								this.result();
-								};	
+								let soundEffect = new Audio ('audio/token.mp3');
+								soundEffect.play();
+									if ((this.currentPlayer === 'Player 1') && (this.end === false)) {
+									document.getElementById(n).style.background = 'radial-gradient(#282727, #141313, #000000)'; // Black Gradient	
+									document.getElementById(n).style.backgroundColor = '#000000'; // Black
+									this.board[b] = this.color;
+									this.result();
+									}
+									else if ((this.currentPlayer === 'Player 2') && (this.end === false)) {
+									document.getElementById(n).style.background = 'radial-gradient(#A00000, #5e0101, #560303)'; // Red Gradient	
+									document.getElementById(n).style.backgroundColor = '#A00000'; // Red
+									this.board[b] = this.color;
+									this.result();
+									};	
 								return; 
 				};	};	};	};
 			break;
@@ -166,19 +171,20 @@ class game {
 					if (this.board[b] === null) {
 						for (let n = 35; n >= 30; n -= 1) { // Checking from the bottom to the top of one column.
 							if (document.getElementById(n).style.backgroundColor === '') {
-								if ((this.currentPlayer === 'Player 1') && (this.end === false)) {
-								document.getElementById(n).style.background = 'radial-gradient(#282727, #141313, #000000)'; // Black Gradient	
-								document.getElementById(n).style.backgroundColor = '#000000'; // Black
-								this.board[b] = this.color;
-								this.result();
-
-								}
-								else if ((this.currentPlayer === 'Player 2') && (this.end === false)) {
-								document.getElementById(n).style.background = 'radial-gradient(#A00000, #5e0101, #560303)'; // Red Gradient	
-								document.getElementById(n).style.backgroundColor = '#A00000'; // Red
-								this.board[b] = this.color;
-								this.result();
-								};	
+								let soundEffect = new Audio ('audio/token.mp3');
+								soundEffect.play();
+									if ((this.currentPlayer === 'Player 1') && (this.end === false)) {
+									document.getElementById(n).style.background = 'radial-gradient(#282727, #141313, #000000)'; // Black Gradient	
+									document.getElementById(n).style.backgroundColor = '#000000'; // Black
+									this.board[b] = this.color;
+									this.result();
+									}
+									else if ((this.currentPlayer === 'Player 2') && (this.end === false)) {
+									document.getElementById(n).style.background = 'radial-gradient(#A00000, #5e0101, #560303)'; // Red Gradient	
+									document.getElementById(n).style.backgroundColor = '#A00000'; // Red
+									this.board[b] = this.color;
+									this.result();
+									};	
 								return; 
 				};	};	};	};
 			break;
@@ -188,19 +194,20 @@ class game {
 					if (this.board[b] === null) {
 						for (let n = 41; n >= 36; n -= 1) { // Checking from the bottom to the top of one column.
 							if (document.getElementById(n).style.backgroundColor === '') {
-								if ((this.currentPlayer === 'Player 1') && (this.end === false)) {
-								document.getElementById(n).style.background = 'radial-gradient(#282727, #141313, #000000)'; // Black Gradient	
-								document.getElementById(n).style.backgroundColor = '#000000'; // Black
-								this.board[b] = this.color;
-								this.result();
-
-								}
-								else if ((this.currentPlayer === 'Player 2') && (this.end === false)) {
-								document.getElementById(n).style.background = 'radial-gradient(#A00000, #5e0101, #560303)'; // Red Gradient	
-								document.getElementById(n).style.backgroundColor = '#A00000'; // Red
-								this.board[b] = this.color;
-								this.result();
-								};	
+								let soundEffect = new Audio ('audio/token.mp3');
+								soundEffect.play();
+									if ((this.currentPlayer === 'Player 1') && (this.end === false)) {
+									document.getElementById(n).style.background = 'radial-gradient(#282727, #141313, #000000)'; // Black Gradient	
+									document.getElementById(n).style.backgroundColor = '#000000'; // Black
+									this.board[b] = this.color;
+									this.result();
+									}
+									else if ((this.currentPlayer === 'Player 2') && (this.end === false)) {
+									document.getElementById(n).style.background = 'radial-gradient(#A00000, #5e0101, #560303)'; // Red Gradient	
+									document.getElementById(n).style.backgroundColor = '#A00000'; // Red
+									this.board[b] = this.color;
+									this.result();
+									};	
 								return; 
 				};	};	};	};
 			break;
@@ -615,5 +622,6 @@ class game {
 
 		let tokens = document.getElementsByClassName('token');
 		for(token of tokens){
-		  token.addEventListener('click', move)
-	};	};
+		  token.addEventListener('click', move);
+		};
+	};
