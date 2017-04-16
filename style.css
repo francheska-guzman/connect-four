@@ -2,10 +2,7 @@
 
 body {
 	margin: 0 auto;
-	background-image: url('images/background.jpg');
-	background-size: 100%;
-	background-position: center;
-	background-repeat: no-repeat;
+	background: radial-gradient(#FFFFFF, #FFFFFF, #99bbd8); 
 }
 
 /*                          */
@@ -19,21 +16,35 @@ body {
 h1 {
 	text-align: center;
 	font-family: 'Philosopher', sans-serif;
-	font-size: 50px;
+	font-size: 35px;
 	color: #2C89CA;
 }
 
 h2 {
 	text-align: center;
 	font-family: 'Philosopher', sans-serif;
-	font-size: 22px;
+	font-size: 16px;
 	color: #329CEB;
 }
 
 h3 {
+	text-align: center;
+	font-family: 'Philosopher', sans-serif;
+	font-size: 20px;
+	color: #CCAD14;
+}
+
+h3:hover {
+	text-align: center;
+	font-family: 'Philosopher', sans-serif;
+	font-size: 20px;
+	color: #D6B92A;
+}
+
+h4 {
 	width: auto;
 	display: inline-block;
-	font-size: 26.5px;
+	font-size: 21.75px;
 	font-family: 'Arsenal', sans-serif;
 }
 
@@ -139,10 +150,6 @@ input {
 	outline: none;
 }
 
-#a, #b, #c, #d, #e, #f, #g {
-	display: inline-block;
-}
-
 .token {
 	display: inline-block;
 	width: 60px;
@@ -161,3 +168,13 @@ input {
 .token:hover {
 	opacity: 1;
 }
+
+#a, #b, #c, #d, #e, #f, #g {
+	display: inline-block;
+}
+
+/*                          */
+/*       Media Queries      */
+/*    (Responsive Design)   */
+/*                          */
+/*                          */
