@@ -1,12 +1,13 @@
-###### Francheska Guzman
+##### Francheska Guzman
 
-# Project #1: The Game
-
-![Original Connect Four](/images/originalC4.png)
+# GA Project #1: The Game
 
 ## Connect Four, The Classic Vertical Four-In-A-Row Game
 
 Connect Four is a two-player game board in which the players take turns dropping tokens from the top into a seven-column, six-row vertically suspended grid. The pieces fall straight down, occupying the next available space within the column. The objective of the game is to be the first to form an horizontal, vertical, or diagonal line of four of one's own token.
+
+#### [Page Deployed on GitHub] (https://github.com/gffrancheska/connectfour)
+#### [My Repository] (https://github.com/gffrancheska/connectfour)
 
 ### Technologies used
 
@@ -50,4 +51,8 @@ After understand the logic of the game, I expand the game to a 7 x 6 grid (array
 
 ### Unsolved problems
 
-Not unsolved problems. :)
+Not unsolved problems related to the functionalty of the game. But, there are a some details that I would like to add. For example:
+
+* Add animation to the tokens, so they fall straight down to the next available space.
+* Add animation to the winner combination.
+* When click reset, all the tokens in the board game fall, and the grid remain empty.
