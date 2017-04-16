@@ -51,8 +51,8 @@ After understand the logic of the game, I expand the game to a 7 x 6 grid (array
 
 ### Unsolved problems
 
-Not unsolved problems related to the functionalty of the game. But, there are a some details that I would like to add. For example:
+Not unsolved problems related to the functionalty of the game. But there are a some details that I would like to add. For example:
 
 * Add animation to the tokens, so they fall straight down to the next available space.
-* Add animation to the winner combination.
-* When click reset, all the tokens in the board game fall, and the grid remain empty.
+* Add animation to the winner combination. I have an idea about how do it. But I think that the way I did to check combinations is not the best to add animation. I manually write each combination, and I'm pretty sure that I can also do that with a for loop. Using a for loop is more easy do detect the combination and use DOM to manipulate the style of the winner combination.
+* When click reset, all the tokens in the board game fall (like the real Connect Four!), and the grid remain empty.
