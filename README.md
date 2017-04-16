@@ -17,13 +17,13 @@ Connect Four is a two-player game board in which the players take turns dropping
 
 ### Approach taken
 
-I started by writting a pseudocode.  Then, instead create a 7 x 6 grid (like the original Connect Four), I started with a 4 x 4 grid to be able to figured out the logic of the game, and makes changes to approach it more easier.  
+I started by writting a pseudocode.  Then, instead create a 7 x 6 grid (like the original Connect Four), I started with a 4 x 4 grid to be able to figured out the logic of the game, and make the necessary changes easier.  
 
 As you can see in the console log, there is an array with a length of 16:
 
 ![Original Connect Four](/images/c4part1.png)
 
-After understand the logic of the game, I expand the game:
+After understand the logic of the game, I expand the game to a 7 x 6 grid (array with a length of 42):
 
 ![Original Connect Four](/images/c4part2.png)
 
