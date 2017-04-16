@@ -128,22 +128,35 @@ h4 {
 /*                          */
 /*                          */
 
-#startButton, #resetButton {
+#startButton {
 	width: 120px;
 	height: 35px;
 	margin: 5px;
 	border: none;
 	background-color: #2C89CA;
+	font-family: 'Arsenal', sans-serif;
 	font-size: 20px;
 	color: #FFFFFF;
 }
 
-#startButton:hover, #resetButton:hover {
+#startButton:hover {
 	background-color: #329CEB;
 }
 
 #resetButton {
+	width: 120px;
+	height: 35px;
+	margin: 5px;
+	border: none;
+	background-color: #CCAD14;
+	font-family: 'Arsenal', sans-serif;
+	font-size: 20px;
+	color: #222323;
 	display: none;
+}
+
+#resetButton:hover {
+	background-color: #D6B92A;
 }
 
 input {
