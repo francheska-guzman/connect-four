@@ -254,3 +254,67 @@ input {
 /*    (Responsive Design)   */
 /*                          */
 /*                          */
+
+/* Smartphones */ 
+
+@media (min-width: 320px) and (max-width: 480px) {
+	h1 {
+		font-size: 20px;
+	}
+
+	h2 {
+		font-size: 14px;
+	}
+
+	h3 {
+		font-size: 16px;
+	}
+
+	h4, h5 {
+		font-size: 14px;
+	}
+
+	p {
+		font-size: 14px;
+	}
+
+	#instructions {
+		font-size: 14px;
+	}
+
+	#grid, #drop {
+		width: 320px;
+	}
+
+	.space {
+	width: 40px;
+	height: 40px;
+	}
+
+	.spaceToken {
+	width: 30px;
+	height: 30px;
+  	}
+
+  	#startButton, #resetButton {
+	width: 60px;
+	height: 25px;
+	font-size: 14px;
+	}
+
+	.token {
+	width: 30px;
+	height: 30px;
+	margin: 5px 6px 5px 6px;
+	opacity: 1;
+	}
+
+	@keyframes changeSize {
+    0% {
+    	font-size: 16px;
+    }
+    50% {
+    	font-size: 16px;
+    }
+  } /* Basically remove keyframe. */
+}
