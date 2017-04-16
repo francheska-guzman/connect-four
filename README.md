@@ -2,6 +2,8 @@
 
 # Connect Four
 
+![Original Connect Four](/images/originalC4.png)
+
 ## The Classic Vertical Four-In-A-Row Game
 
 ### Explanations of the technologies used
