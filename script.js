@@ -25,6 +25,8 @@ class game {
 		document.getElementById('title').style.display = 'none';
 		document.getElementById('startButton').style.display = 'none';
 		document.getElementById('resetButton').style.display = 'initial';
+		document.getElementById('grid').style.display = 'block';
+		document.getElementById('howtoplay').style.display = 'none';
 		this.end = false,
 		this.count = 0,
 		this.currentPlayer = 'Player 1',
@@ -538,14 +540,14 @@ class game {
 		&& ((this.board[15] === this.color) && (this.board[21])	=== this.color))) { 
 		this.end = true;
 		document.getElementById('drop').style.display = 'none';
-		document.getElementById('player').style.display = 'none';
+		document.getElementById('currentP').style.display = 'none';
 		document.getElementById('message').style.display = 'block';
 		document.getElementById('message').innerHTML = "Congratulations " + this.currentPlayer + " (" + this.color + "), you won!"; 
 	}
 	else if (this.count === 42) {
 		this.end = true;
 		document.getElementById('drop').style.display = 'none';
-		document.getElementById('player').style.display = 'none';
+		document.getElementById('currentP').style.display = 'none';
 		document.getElementById('message').style.display = 'block';
 		document.getElementById('message').innerHTML = "It's a tie!";
 	}
@@ -561,7 +563,7 @@ class game {
 			case 'Player 1':
 				this.currentPlayer = 'Player 2';
 				this.color = 'Red';
-				document.getElementById('player').innerHTML = 'Current Player: Player 2 (Red)';
+				document.getElementById('player').innerHTML = 'Player 2 (Red)';
 				document.getElementById('player').style.color = '#C10707';
 				document.getElementById('a').style.backgroundColor = '#C10707';
 				document.getElementById('b').style.backgroundColor = '#C10707';
@@ -583,7 +585,7 @@ class game {
 			case 'Player 2':
 				this.currentPlayer = 'Player 1';
 				this.color = 'Black';
-				document.getElementById('player').innerHTML = 'Current Player: Player 1 (Black)';
+				document.getElementById('player').innerHTML = 'Player 1 (Black)';
 				document.getElementById('player').style.color = '#000000';
 				document.getElementById('a').style.backgroundColor = '#000000';
 				document.getElementById('b').style.backgroundColor = '#000000';
@@ -625,3 +627,13 @@ class game {
 		  token.addEventListener('click', move);
 		};
 	};
+
+/*                          */
+/*        How to Play       */
+/*                          */
+
+	function instructions() {
+		document.getElementById('grid').style.display = 'none';
+		document.getElementById('howtoplay').style.display = 'initial';
+	}
+

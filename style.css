@@ -3,6 +3,7 @@
 body {
 	margin: 0 auto;
 	background: radial-gradient(#FFFFFF, #FFFFFF, #99BBD8); 
+	background-repeat: no-repeat; 
 }
 
 /*                          */
@@ -46,17 +47,50 @@ h3:hover {
 h4 {
 	width: auto;
 	display: inline-block;
-	font-size: 21.75px;
+	font-size: 22px;
 	font-family: 'Arsenal', sans-serif;
+}
+
+h5 {
+	width: auto;
+	display: inline-block;
+	font-size: 22px;
+	font-family: 'Arsenal', sans-serif;
+	text-align: center;
+	margin: 10px 40px 10px 40px;
+}
+
+p {
+	font-size: 18px;
+	margin: 10px 40px 10px 40px;
+	font-family: 'Philosopher', sans-serif;
+	color: #2D2C2C;
 }
 
 /*                          */
 /*                          */
-/*        6 x 7 Grid        */
+/*       Instructions       */
 /*                          */
 /*                          */
 
-#grid6x7 {
+#howtoplay {
+	display: none;
+}
+
+#instructions {
+	font-size: 18px;
+	margin: 10px 40px 10px 40px;
+	font-family: 'Philosopher', sans-serif;
+	color: #2D2C2C;
+}
+
+/*                          */
+/*                          */
+/*        7 x 6 Grid        */
+/*                          */
+/*                          */
+
+#grid {
 	width: 600px;
 	height: auto;
 	padding: 4px 0 1px 0;
@@ -66,6 +100,14 @@ h4 {
 	border-left: 15px solid #2C89CA;
 	border-right: 15px solid #2C89CA;
 	border-radius: 15px;
+}
+
+#currentP {
+	color: #4C4949;
+}
+
+#player {
+	color: #000000;
 }
 
 #drop {

@@ -1,95 +1,104 @@
 <!-- Francheska Guzman -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en'>
 <head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta charset='UTF-8'>
+	<link rel='stylesheet' type='text/css' href='style.css'>
 	<title>Connect Four by Francheska</title>
 </head>
 <body>
-	<div id="title">
+	<div id='title'>
 	<h1>Connect Four</h1>
 	<h2>The Classic Vertical Four-In-A-Row Game</h2>
-	<h3>How to Play</h3>
+	<h3 onclick='instructions()'>How to Play</h3>
+		<div id='howtoplay'>
+			<h5>Summary</h5>
+			<p>Connect Four is a two-player game in which the players take turns dropping discs from the top into a seven-column, six-row vertically suspended grid. The pieces fall straight down, occupying the next available space within the column. The objective of the game is to be the first to form an horizontal, vertical, or diagonal line of four of one's own discs.</p>
+			<h5>How to Play</h5>
+			<ol id="instructions"> <!-- Ordered list -->
+			<li>Decide who plays first. Players will alternate turns after playing a checker. The first player drop black checkers, and the second drop red checkers.</li>
+			<li>On your turn, move the mouse at the top of the grid.</li>
+			</ol>
+		</div>
 	</div>
-	<div id="show" class="center">
-		<div id="players">
-			<h4 id='player'>Current Player: Player 1 (Black)</h4>
+	<div id='show' class='center'>
+		<div id='players'>
+			<h4 id='currentP'>Current Player: <span id='player'>Player 1 (Black)</span></h4>
 			<h4 id='message'> <!-- Win or Tie --> </h4>
 		</div>
-		<ul id="drop">
-			<li id="a" class="token"></li>
-			<li id="b" class="token"></li>
-			<li id="c" class="token"></li>
-			<li id="d" class="token"></li>
-			<li id="e" class="token"></li>
-			<li id="f" class="token"></li>
-			<li id="g" class="token"></li>
+		<ul id='drop'>
+			<li id='a' class='token'></li>
+			<li id='b' class='token'></li>
+			<li id='c' class='token'></li>
+			<li id='d' class='token'></li>
+			<li id='e' class='token'></li>
+			<li id='f' class='token'></li>
+			<li id='g' class='token'></li>
 		</ul>
 	</div>
-	<div id="grid6x7" class="center">
-		<ul class="col">
-			<li id="a1" class="space"><div id="0" class="spaceToken"></div></li>
-			<li id="a2" class="space"><div id="1" class="spaceToken"></div></li>
-			<li id="a3" class="space"><div id="2" class="spaceToken"></div></li>
-			<li id="a4" class="space"><div id="3" class="spaceToken"></div></li>
-			<li id="a5" class="space"><div id="4" class="spaceToken"></div></li>
-			<li id="a6" class="space"><div id="5" class="spaceToken"></div></li>
+	<div id='grid' class='center'>
+		<ul class='col'>
+			<li id='a1' class='space'><div id='0' class='spaceToken'></div></li>
+			<li id='a2' class='space'><div id='1' class='spaceToken'></div></li>
+			<li id='a3' class='space'><div id='2' class='spaceToken'></div></li>
+			<li id='a4' class='space'><div id='3' class='spaceToken'></div></li>
+			<li id='a5' class='space'><div id='4' class='spaceToken'></div></li>
+			<li id='a6' class='space'><div id='5' class='spaceToken'></div></li>
 		</ul>
-		<ul class="col">
-			<li id="b1" class="space"><div id="6" class="spaceToken"></div></li>
-			<li id="b2" class="space"><div id="7" class="spaceToken"></div></li>
-			<li id="b3" class="space"><div id="8" class="spaceToken"></div></li>
-			<li id="b4" class="space"><div id="9" class="spaceToken"></div></li>
-			<li id="b5" class="space"><div id="10" class="spaceToken"></div></li>
-			<li id="b6" class="space"><div id="11" class="spaceToken"></div></li>
+		<ul class='col'>
+			<li id='b1' class='space'><div id='6' class='spaceToken'></div></li>
+			<li id='b2' class='space'><div id='7' class='spaceToken'></div></li>
+			<li id='b3' class='space'><div id='8' class='spaceToken'></div></li>
+			<li id='b4' class='space'><div id='9' class='spaceToken'></div></li>
+			<li id='b5' class='space'><div id='10' class='spaceToken'></div></li>
+			<li id='b6' class='space'><div id='11' class='spaceToken'></div></li>
 		</ul>
-		<ul class="col">
-			<li id="c1" class="space"><div id="12" class="spaceToken"></div></li>
-			<li id="c2" class="space"><div id="13" class="spaceToken"></div></li>
-			<li id="c3" class="space"><div id="14" class="spaceToken"></div></li>
-			<li id="c4" class="space"><div id="15" class="spaceToken"></div></li>
-			<li id="c5" class="space"><div id="16" class="spaceToken"></div></li>
-			<li id="c6" class="space"><div id="17" class="spaceToken"></div></li>
+		<ul class='col'>
+			<li id='c1' class='space'><div id='12' class='spaceToken'></div></li>
+			<li id='c2' class='space'><div id='13' class='spaceToken'></div></li>
+			<li id='c3' class='space'><div id='14' class='spaceToken'></div></li>
+			<li id='c4' class='space'><div id='15' class='spaceToken'></div></li>
+			<li id='c5' class='space'><div id='16' class='spaceToken'></div></li>
+			<li id='c6' class='space'><div id='17' class='spaceToken'></div></li>
 		</ul>
-		<ul class="col">
-			<li id="d1" class="space"><div id="18" class="spaceToken"></div></li>
-			<li id="d2" class="space"><div id="19" class="spaceToken"></div></li>
-			<li id="d3" class="space"><div id="20" class="spaceToken"></div></li>
-			<li id="d4" class="space"><div id="21" class="spaceToken"></div></li>
-			<li id="d5" class="space"><div id="22" class="spaceToken"></div></li>
-			<li id="d6" class="space"><div id="23" class="spaceToken"></div></li>
+		<ul class='col'>
+			<li id='d1' class='space'><div id='18' class='spaceToken'></div></li>
+			<li id='d2' class='space'><div id='19' class='spaceToken'></div></li>
+			<li id='d3' class='space'><div id='20' class='spaceToken'></div></li>
+			<li id='d4' class='space'><div id='21' class='spaceToken'></div></li>
+			<li id='d5' class='space'><div id='22' class='spaceToken'></div></li>
+			<li id='d6' class='space'><div id='23' class='spaceToken'></div></li>
 		</ul>
-		<ul class="col">
-			<li id="e1" class="space"><div id="24" class="spaceToken"></div></li>
-			<li id="e2" class="space"><div id="25" class="spaceToken"></div></li>
-			<li id="e3" class="space"><div id="26" class="spaceToken"></div></li>
-			<li id="e4" class="space"><div id="27" class="spaceToken"></div></li>
-			<li id="e5" class="space"><div id="28" class="spaceToken"></div></li>
-			<li id="e6" class="space"><div id="29" class="spaceToken"></div></li>
+		<ul class='col'>
+			<li id='e1' class='space'><div id='24' class='spaceToken'></div></li>
+			<li id='e2' class='space'><div id='25' class='spaceToken'></div></li>
+			<li id='e3' class='space'><div id='26' class='spaceToken'></div></li>
+			<li id='e4' class='space'><div id='27' class='spaceToken'></div></li>
+			<li id='e5' class='space'><div id='28' class='spaceToken'></div></li>
+			<li id='e6' class='space'><div id='29' class='spaceToken'></div></li>
 		</ul>
-		<ul class="col">
-			<li id="f1" class="space"><div id="30" class="spaceToken"></div></li>
-			<li id="f2" class="space"><div id="31" class="spaceToken"></div></li>
-			<li id="f3" class="space"><div id="32" class="spaceToken"></div></li>
-			<li id="f4" class="space"><div id="33" class="spaceToken"></div></li>
-			<li id="f5" class="space"><div id="34" class="spaceToken"></div></li>
-			<li id="f6" class="space"><div id="35" class="spaceToken"></div></li>
+		<ul class='col'>
+			<li id='f1' class='space'><div id='30' class='spaceToken'></div></li>
+			<li id='f2' class='space'><div id='31' class='spaceToken'></div></li>
+			<li id='f3' class='space'><div id='32' class='spaceToken'></div></li>
+			<li id='f4' class='space'><div id='33' class='spaceToken'></div></li>
+			<li id='f5' class='space'><div id='34' class='spaceToken'></div></li>
+			<li id='f6' class='space'><div id='35' class='spaceToken'></div></li>
 		</ul>
-		<ul class="col">
-			<li id="g1" class="space"><div id="36" class="spaceToken"></div></li>
-			<li id="g2" class="space"><div id="37" class="spaceToken"></div></li>
-			<li id="g3" class="space"><div id="38" class="spaceToken"></div></li>
-			<li id="g4" class="space"><div id="39" class="spaceToken"></div></li>
-			<li id="g5" class="space"><div id="40" class="spaceToken"></div></li>
-			<li id="g6" class="space"><div id="41" class="spaceToken"></div></li>
+		<ul class='col'>
+			<li id='g1' class='space'><div id='36' class='spaceToken'></div></li>
+			<li id='g2' class='space'><div id='37' class='spaceToken'></div></li>
+			<li id='g3' class='space'><div id='38' class='spaceToken'></div></li>
+			<li id='g4' class='space'><div id='39' class='spaceToken'></div></li>
+			<li id='g5' class='space'><div id='40' class='spaceToken'></div></li>
+			<li id='g6' class='space'><div id='41' class='spaceToken'></div></li>
 		</ul>
 	</div>
-	<div class="center">
-		<input type="button" id="startButton" value="Start" onclick="Game()">
-		<input type="button" id="resetButton" value="Reset" onclick="window.location.reload()">
+	<div class='center'>
+		<input type='button' id='startButton' value='Start' onclick='Game()'>
+		<input type='button' id='resetButton' value='Reset' onclick='window.location.reload()'>
 	</div>
 
-	<script src="script.js"></script>
+	<script src='script.js'></script>
 </body>
 </html>
