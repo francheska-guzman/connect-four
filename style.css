@@ -135,19 +135,27 @@ h3 {
 	display: none;
 }
 
+input {
+	outline: none;
+}
+
 #a, #b, #c, #d, #e, #f, #g {
 	display: inline-block;
 }
 
 .token {
+	display: inline-block;
 	width: 60px;
 	height: 60px;
-	margin: 10px 12px 10px 9px;
+	margin: 10px 11px 10px 11px;
 	border: none;
 	background-color: #000000;
 	background: radial-gradient(#141414, #000000, #3A3A3A);
 	border-radius: 50%;
 	opacity: 0;
+	-webkit-user-select: none; /* Chrome/Safari */        
+	-moz-user-select: none; /* Firefox */
+	-ms-user-select: none; /* IE10+ */
 }
 
 .token:hover {
