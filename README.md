@@ -10,10 +10,12 @@ Connect Four is a two-player game board in which the players take turns dropping
 
 ### Technologies used
 
-* HTML
+* HTML 
 * CSS
 * Vanilla JavaScript
 * Google Chrome Developer Tools
+
+I decided to not use jQuery, because this is my very first project in GA, and I wanted to mastering my skills in Vanilla JavaScript, before implementing libraries like jQuery. The use of Vanilla JavaScript, allowed me to understand better what's happening in the code. For the next projects, I will be more open to use other technologies like jQuery.
 
 ### Approach taken
 
@@ -48,4 +50,4 @@ After understand the logic of the game, I expand the game to a 7 x 6 grid (array
 
 ### Unsolved problems
 
-Not unsolved problems. :) 
+Not unsolved problems. :)
