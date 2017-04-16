@@ -57,15 +57,15 @@ h5 {
 	font-size: 24px;
 	font-family: 'Arsenal', sans-serif;
 	text-align: center;
-	margin: 10px 40px 10px 40px;
+	margin: 10px 10% 10px 10%;
 	color: #CCAD14;
 }
 
 p {
 	font-size: 18px;
-	margin: 10px 40px 10px 40px;
+	margin: 10px 10% 10px 10%;
 	font-family: 'Philosopher', sans-serif;
-	color: #2D2C2C;
+	color: #373838;
 	line-height: 1.3;
 }
 
@@ -81,7 +81,7 @@ p {
 
 #instructions {
 	font-size: 18px;
-	margin: 10px 40px 10px 40px;
+	margin: 10px 10% 10px 10%;
 	font-family: 'Philosopher', sans-serif;
 	color: #2D2C2C;
 	line-height: 1.3;
@@ -106,7 +106,7 @@ p {
 }
 
 #currentP {
-	color: #4C4949;
+	color: #373838;
 }
 
 #player {
@@ -138,6 +138,7 @@ p {
 	height: 48px;
 	text-align: center;
 	font-size: 25px;
+	color: #373838;
 }
 
 .center {
@@ -198,7 +199,7 @@ p {
 	background-color: #CCAD14;
 	font-family: 'Arsenal', sans-serif;
 	font-size: 20px;
-	color: #222323;
+	color: #373838;
 	display: none;
 }
 
