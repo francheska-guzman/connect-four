@@ -27,9 +27,9 @@ class game {
 		document.getElementById('resetButton').style.display = 'initial';
 		document.getElementById('grid').style.display = 'block';
 		document.getElementById('howtoplay').style.display = 'none';
-		this.end = false,
-		this.count = 0,
-		this.currentPlayer = 'Player 1',
+		this.end = false, // This.end turn to true, when the game end.
+		this.count = 0, // Necessary to count until 42 (maximum moves in Connect Four).
+		this.currentPlayer = 'Player 1', // By default, player 1 (black) play first.
 		this.color = 'Black',
 		this.board = 	[/* 0 */  null, /* 1 */  null, 	/* 2 */ null, 	/* 3 */  null, 	/* 4 */  null, 	/* 5 */   null, /* 6 */  null,
 						 /* 7 */  null, /* 8 */  null, 	/* 9 */ null, 	/* 10 */ null, 	/* 11 */ null, 	/* 12 */  null, /* 13 */ null,
@@ -48,40 +48,40 @@ class game {
 	let target = event.target;
 	let token = document.getElementsByClassName('token');
 
-	for (let i = 0; i < token.length; i += 1) {
-		if (token[i] == target) {
-			switch(token[i].value + i) {
+	for (let i = 0; i < token.length; i += 1) { // Array of the class token.
+		if (token[i] == target) { // To detect which of the seven tokens has been clicked.
+			switch(token[i].value + i) { // document.getElementsByClassName('token').value = 0, so if I want to identify a particular token of the class token, I add 1.
 
 			case 0: /* Token A & Column A */
 
-				for (let b = 35; b >= 0; b -= 7){ // this.board array
-					if (this.board[b] === null) {
+				for (let b = 35; b >= 0; b -= 7){ // Checking from the bottom to the top of this.board array. (35, 28, 21, 14, 7 and 0)
+					if (this.board[b] === null) { // If available space.
 						for (let n = 5; n >= 0; n -= 1) { // Checking from the bottom to the top of one column.
-							if (document.getElementById(n).style.backgroundColor === '') {
-								let soundEffect = new Audio ('audio/token.mp3');
-								soundEffect.play();
-									if ((this.currentPlayer === 'Player 1') && (this.end === false)) {
+							if (document.getElementById(n).style.backgroundColor === '') { // If no background color (equals to available space).
+								let soundEffect = new Audio ('audio/token.mp3'); // Adding sound effect.
+								soundEffect.play(); // Calling the sound effect.
+									if ((this.currentPlayer === 'Player 1') && (this.end === false)) { // If current player is player 1 and game is in progress.
 									document.getElementById(n).style.background = 'radial-gradient(#000000, #0C0C0C, #383838)'; // Black Gradient	
 									document.getElementById(n).style.backgroundColor = '#000000'; // Black
-									this.board[b] = this.color;
-									this.result();
+									this.board[b] = this.color; // In this.board array, in the position b, add the current player's color (Black).
+									this.result(); // Calling the function to check result.
 									}
-									else if ((this.currentPlayer === 'Player 2') && (this.end === false)) {
+									else if ((this.currentPlayer === 'Player 2') && (this.end === false)) { // If current player is player 2 and game is in progress.
 									document.getElementById(n).style.background = 'radial-gradient(#720303, #720303, #AA0808)'; // Red Gradient	
 									document.getElementById(n).style.backgroundColor = '#720303'; // Red
-									this.board[b] = this.color;
-									this.result();
+									this.board[b] = this.color; // In this.board array, in the position b, add the current player's color (Red).
+									this.result(); // Calling the function to check result.
 									};	
 								return; 
 				};	};	};	};
-				// User can't insert a token, if the column 0 is full.
+				// User can't insert a token, if the column A is full.
 				if (this.board[0] !== null) {
 				token[0].removeEventListener('click', move);
 				};
 			break;
 
 			case 1: /* Token B & Column B */
-				for (let b = 36; b >= 1; b -= 7){ // this.board array
+				for (let b = 36; b >= 1; b -= 7){ // Checking from the bottom to the top of this.board array. (36, 29, 22, 15, 8 and 1)
 					if (this.board[b] === null) {
 						for (let n = 11; n >= 6; n -= 1) { // Checking from the bottom to the top of one column.
 							if (document.getElementById(n).style.backgroundColor === '') {
@@ -101,7 +101,7 @@ class game {
 									};	
 								return; 
 				};	};	};	};
-				// User can't insert a token, if the column 1 is full.
+				// User can't insert a token, if the column B is full.
 				if (this.board[1] !== null) {
 				token[1].removeEventListener('click', move);
 				};
@@ -128,7 +128,7 @@ class game {
 									};	
 								return; 
 				};	};	};	};
-				// User can't insert a token, if the column 2 is full.
+				// User can't insert a token, if the column C is full.
 				if (this.board[2] !== null) {
 				token[2].removeEventListener('click', move);
 				};
@@ -155,7 +155,7 @@ class game {
 									};	
 								return; 
 				};	};	};	};
-				// User can't insert a token, if the column 3 is full.
+				// User can't insert a token, if the column D is full.
 				if (this.board[3] !== null) {
 				token[3].removeEventListener('click', move);
 				};
@@ -182,7 +182,7 @@ class game {
 									};	
 								return; 
 				};	};	};	};
-				// User can't insert a token, if the column 4 is full.
+				// User can't insert a token, if the column E is full.
 				if (this.board[4] !== null) {
 				token[4].removeEventListener('click', move);
 				};
@@ -209,7 +209,7 @@ class game {
 									};	
 								return; 
 				};	};	};	};
-				// User can't insert a token, if the column 5 is full.
+				// User can't insert a token, if the column F is full.
 				if (this.board[5] !== null) {
 				token[5].removeEventListener('click', move);
 				};
@@ -236,7 +236,7 @@ class game {
 									};	
 								return; 
 				};	};	};	};
-				// User can't insert a token, if the column 6 is full.
+				// User can't insert a token, if the column G is full.
 				if (this.board[6] !== null) {
 				token[6].removeEventListener('click', move);
 				};
@@ -257,9 +257,9 @@ class game {
 
 	result() { 
 	console.log('Checking if the player is a winner or tie... Otherwise, continue the game.');
-	console.log(this.board);
+	console.log(this.board); // Print the array in the console log. Show the available spaces (null), if any, and position of red and black tokens.
 
-	this.count += 1;
+	this.count += 1; // Sum 1 on every move, until reach 42 (maximum moves).
 
 	// Horizontal combinations Row 1
 
@@ -567,19 +567,23 @@ class game {
 		&& ((this.board[9] 	=== this.color) && (this.board[15]) === this.color) 
 		&& ((this.board[15] === this.color) && (this.board[21])	=== this.color))) { 
 		this.end = true;
-		document.getElementById('drop').style.display = 'none';
+		document.getElementById('drop').style.display = 'none'; // Tokens in the top of the grid will be hidden, so players can't click.
 		document.getElementById('currentP').style.display = 'none';
 		document.getElementById('message').style.display = 'block';
-		document.getElementById('message').innerHTML = "Congratulations " + this.currentPlayer + " (" + this.color + "), you won!"; 
+		document.getElementById('message').innerHTML = "Congratulations " + this.currentPlayer + " (" + this.color + "), you won!"; // Display in the browser the result.
+		console.log("Congratulations " + this.currentPlayer + " (" + this.color + "), you won!");
 	}
 	else if (this.count === 42) {
 		this.end = true;
-		document.getElementById('drop').style.display = 'none';
+		document.getElementById('drop').style.display = 'none'; // Tokens in the top of the grid will be hidden, so players can't click.
 		document.getElementById('currentP').style.display = 'none';
 		document.getElementById('message').style.display = 'block';
-		document.getElementById('message').innerHTML = "It's a tie!";
+		document.getElementById('message').innerHTML = "It's a tie!"; // Display in the browser the result.
+		console.log("It's a tie!");
 	}
-		this.switchPlayer();
+	else {
+		this.switchPlayer(); // If no winner or tie, continue the game!
+	};
 	}; // End of result.
 
 /*                          */
@@ -588,7 +592,7 @@ class game {
 
 	switchPlayer() {
 		switch(this.currentPlayer) {
-			case 'Player 1':
+			case 'Player 1': // When player is 1, change to player 2.
 				this.currentPlayer = 'Player 2';
 				this.color = 'Red';
 				document.getElementById('player').innerHTML = 'Player 2 (Red!)';
@@ -610,7 +614,7 @@ class game {
 				console.log('Next turn: ' + this.currentPlayer + ' (Red!)');
 				break;
 
-			case 'Player 2':
+			case 'Player 2': // When player is 2, change to player 1.
 				this.currentPlayer = 'Player 1';
 				this.color = 'Black';
 				document.getElementById('player').innerHTML = 'Player 1 (Black!)';
@@ -644,14 +648,15 @@ class game {
 	function Game() {
 
 		let ConnectFour = new game;
-		ConnectFour.init();
+		ConnectFour.init(); // Initialization of the game.
 
 		let move = function() {
 			ConnectFour.moveToken();
 		};
 
+		// Adding event listener to tokens.
 		let tokens = document.getElementsByClassName('token');
-		for(token of tokens){
+		for(token of tokens) {
 		  token.addEventListener('click', move);
 		};
 	};
@@ -661,6 +666,7 @@ class game {
 /*                          */
 
 	function instructions() {
+		// Instructions are hidden, until the user press 'How to Play'.
 		document.getElementById('grid').style.display = 'none';
 		document.getElementById('howtoplay').style.display = 'initial';
 	}
