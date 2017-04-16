@@ -540,7 +540,7 @@ class game {
 		document.getElementById('drop').style.display = 'none';
 		document.getElementById('player').style.display = 'none';
 		document.getElementById('message').style.display = 'block';
-		document.getElementById('message').innerHTML = "Congratulations " + this.currentPlayer + ", you won!"; 
+		document.getElementById('message').innerHTML = "Congratulations " + this.currentPlayer + " (" + this.color + "), you won!"; 
 	}
 	else if (this.count === 42) {
 		this.end = true;
@@ -561,7 +561,7 @@ class game {
 			case 'Player 1':
 				this.currentPlayer = 'Player 2';
 				this.color = 'Red';
-				document.getElementById('player').innerHTML = 'Current Player: Red';
+				document.getElementById('player').innerHTML = 'Current Player: Player 2 (Red)';
 				document.getElementById('player').style.color = '#820909';
 				document.getElementById('a').style.backgroundColor = '#820909';
 				document.getElementById('b').style.backgroundColor = '#820909';
@@ -583,7 +583,7 @@ class game {
 			case 'Player 2':
 				this.currentPlayer = 'Player 1';
 				this.color = 'Black';
-				document.getElementById('player').innerHTML = 'Current Player: Black';
+				document.getElementById('player').innerHTML = 'Current Player: Player 1 (Black)';
 				document.getElementById('player').style.color = '#000000';
 				document.getElementById('a').style.backgroundColor = '#000000';
 				document.getElementById('b').style.backgroundColor = '#000000';
