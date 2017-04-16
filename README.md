@@ -19,6 +19,13 @@ Connect Four is a two-player game board in which the players take turns dropping
 
 ### User stories
 
+* 'How to Play' instructions are available before start the game.
+* User have to press the 'Start' button to play. 
+* While the game is in progress, the start button change to a 'Reset' button.
+* While the game is in progress, players are able to see who's turn is.
+* If one of the players won, or if it's a tie, the page displays a message.
+* When the game end, players can't press the token's to make moves.
+
 ### Wireframes
 
 ### How-to-use instructions
@@ -30,3 +37,5 @@ Connect Four is a two-player game board in which the players take turns dropping
 5. To play again, click 'Reset' and then press 'Start'.
 
 ### Unsolved problems
+
+Not unsolved problems. :) 
