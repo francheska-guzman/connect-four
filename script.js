@@ -61,14 +61,14 @@ class game {
 								let soundEffect = new Audio ('audio/token.mp3');
 								soundEffect.play();
 									if ((this.currentPlayer === 'Player 1') && (this.end === false)) {
-									document.getElementById(n).style.background = 'radial-gradient(#141414, #000000, #3A3A3A)'; // Black Gradient	
+									document.getElementById(n).style.background = 'radial-gradient(#000000, #0C0C0C, #383838)'; // Black Gradient	
 									document.getElementById(n).style.backgroundColor = '#000000'; // Black
 									this.board[b] = this.color;
 									this.result();
 									}
 									else if ((this.currentPlayer === 'Player 2') && (this.end === false)) {
-									document.getElementById(n).style.background = 'radial-gradient(#C10707, #9B1212, #B20505)'; // Red Gradient	
-									document.getElementById(n).style.backgroundColor = '#C10707'; // Red
+									document.getElementById(n).style.background = 'radial-gradient(#720303, #720303, #AA0808)'; // Red Gradient	
+									document.getElementById(n).style.backgroundColor = '#720303'; // Red
 									this.board[b] = this.color;
 									this.result();
 									};	
@@ -84,14 +84,14 @@ class game {
 								let soundEffect = new Audio ('audio/token.mp3');
 								soundEffect.play();
 									if ((this.currentPlayer === 'Player 1') && (this.end === false)) {
-									document.getElementById(n).style.background = 'radial-gradient(#141414, #000000, #3A3A3A)'; // Black Gradient	
+									document.getElementById(n).style.background = 'radial-gradient(#000000, #0C0C0C, #383838)'; // Black Gradient	
 									document.getElementById(n).style.backgroundColor = '#000000'; // Black
 									this.board[b] = this.color;
 									this.result();
 									}
 									else if ((this.currentPlayer === 'Player 2') && (this.end === false)) {
-									document.getElementById(n).style.background = 'radial-gradient(#C10707, #9B1212, #B20505)'; // Red Gradient	
-									document.getElementById(n).style.backgroundColor = '#C10707'; // Red
+									document.getElementById(n).style.background = 'radial-gradient(#720303, #720303, #AA0808)'; // Red Gradient	
+									document.getElementById(n).style.backgroundColor = '#720303'; // Red
 									this.board[b] = this.color;
 									this.result();
 									};	
@@ -107,14 +107,14 @@ class game {
 								let soundEffect = new Audio ('audio/token.mp3');
 								soundEffect.play();
 									if ((this.currentPlayer === 'Player 1') && (this.end === false)) {
-									document.getElementById(n).style.background = 'radial-gradient(#141414, #000000, #3A3A3A)'; // Black Gradient
+									document.getElementById(n).style.background = 'radial-gradient(#000000, #0C0C0C, #383838)'; // Black Gradient
 									document.getElementById(n).style.backgroundColor = '#000000'; // Black
 									this.board[b] = this.color;
 									this.result();
 									}
 									else if ((this.currentPlayer === 'Player 2') && (this.end === false)) {
-									document.getElementById(n).style.background = 'radial-gradient(#C10707, #9B1212, #B20505)'; // Red Gradient	
-									document.getElementById(n).style.backgroundColor = '#C10707'; // Red
+									document.getElementById(n).style.background = 'radial-gradient(#720303, #720303, #AA0808)'; // Red Gradient	
+									document.getElementById(n).style.backgroundColor = '#720303'; // Red
 									this.board[b] = this.color;
 									this.result();
 									};	
@@ -130,14 +130,14 @@ class game {
 								let soundEffect = new Audio ('audio/token.mp3');
 								soundEffect.play();
 									if ((this.currentPlayer === 'Player 1') && (this.end === false)) {
-									document.getElementById(n).style.background = 'radial-gradient(#141414, #000000, #3A3A3A)'; // Black Gradient	
+									document.getElementById(n).style.background = 'radial-gradient(#000000, #0C0C0C, #383838)'; // Black Gradient	
 									document.getElementById(n).style.backgroundColor = '#000000'; // Black
 									this.board[b] = this.color;
 									this.result();
 									}
 									else if ((this.currentPlayer === 'Player 2') && (this.end === false)) {
-									document.getElementById(n).style.background = 'radial-gradient(#C10707, #9B1212, #B20505)'; // Red Gradient	
-									document.getElementById(n).style.backgroundColor = '#C10707'; // Red
+									document.getElementById(n).style.background = 'radial-gradient(#720303, #720303, #AA0808)'; // Red Gradient	
+									document.getElementById(n).style.backgroundColor = '#720303'; // Red
 									this.board[b] = this.color;
 									this.result();
 									};	
@@ -153,14 +153,14 @@ class game {
 								let soundEffect = new Audio ('audio/token.mp3');
 								soundEffect.play();
 									if ((this.currentPlayer === 'Player 1') && (this.end === false)) {
-									document.getElementById(n).style.background = 'radial-gradient(#141414, #000000, #3A3A3A)'; // Black Gradient	
+									document.getElementById(n).style.background = 'radial-gradient(#000000, #0C0C0C, #383838)'; // Black Gradient	
 									document.getElementById(n).style.backgroundColor = '#000000'; // Black
 									this.board[b] = this.color;
 									this.result();
 									}
 									else if ((this.currentPlayer === 'Player 2') && (this.end === false)) {
-									document.getElementById(n).style.background = 'radial-gradient(#C10707, #9B1212, #B20505)'; // Red Gradient	
-									document.getElementById(n).style.backgroundColor = '#C10707'; // Red
+									document.getElementById(n).style.background = 'radial-gradient(#720303, #720303, #AA0808)'; // Red Gradient	
+									document.getElementById(n).style.backgroundColor = '#720303'; // Red
 									this.board[b] = this.color;
 									this.result();
 									};	
@@ -176,14 +176,14 @@ class game {
 								let soundEffect = new Audio ('audio/token.mp3');
 								soundEffect.play();
 									if ((this.currentPlayer === 'Player 1') && (this.end === false)) {
-									document.getElementById(n).style.background = 'radial-gradient(#141414, #000000, #3A3A3A)'; // Black Gradient	
+									document.getElementById(n).style.background = 'radial-gradient(#000000, #0C0C0C, #383838)'; // Black Gradient	
 									document.getElementById(n).style.backgroundColor = '#000000'; // Black
 									this.board[b] = this.color;
 									this.result();
 									}
 									else if ((this.currentPlayer === 'Player 2') && (this.end === false)) {
-									document.getElementById(n).style.background = 'radial-gradient(#C10707, #9B1212, #B20505)'; // Red Gradient	
-									document.getElementById(n).style.backgroundColor = '#C10707'; // Red
+									document.getElementById(n).style.background = 'radial-gradient(#720303, #720303, #AA0808)'; // Red Gradient	
+									document.getElementById(n).style.backgroundColor = '#720303'; // Red
 									this.board[b] = this.color;
 									this.result();
 									};	
@@ -199,14 +199,14 @@ class game {
 								let soundEffect = new Audio ('audio/token.mp3');
 								soundEffect.play();
 									if ((this.currentPlayer === 'Player 1') && (this.end === false)) {
-									document.getElementById(n).style.background = 'radial-gradient(#141414, #000000, #3A3A3A)'; // Black Gradient	
+									document.getElementById(n).style.background = 'radial-gradient(#000000, #0C0C0C, #383838)'; // Black Gradient	
 									document.getElementById(n).style.backgroundColor = '#000000'; // Black
 									this.board[b] = this.color;
 									this.result();
 									}
 									else if ((this.currentPlayer === 'Player 2') && (this.end === false)) {
-									document.getElementById(n).style.background = 'radial-gradient(#C10707, #9B1212, #B20505)'; // Red Gradient		
-									document.getElementById(n).style.backgroundColor = '#C10707'; // Red
+									document.getElementById(n).style.background = 'radial-gradient(#720303, #720303, #AA0808)'; // Red Gradient		
+									document.getElementById(n).style.backgroundColor = '#720303'; // Red
 									this.board[b] = this.color;
 									this.result();
 									};	
@@ -564,21 +564,21 @@ class game {
 				this.currentPlayer = 'Player 2';
 				this.color = 'Red';
 				document.getElementById('player').innerHTML = 'Player 2 (Red)';
-				document.getElementById('player').style.color = '#C10707';
-				document.getElementById('a').style.backgroundColor = '#C10707';
-				document.getElementById('b').style.backgroundColor = '#C10707';
-				document.getElementById('c').style.backgroundColor = '#C10707';
-				document.getElementById('d').style.backgroundColor = '#C10707';
-				document.getElementById('e').style.backgroundColor = '#C10707';
-				document.getElementById('f').style.backgroundColor = '#C10707';
-				document.getElementById('g').style.backgroundColor = '#C10707';
-				document.getElementById('a').style.background = 'radial-gradient(#C10707, #9B1212, #B20505)';
-				document.getElementById('b').style.background = 'radial-gradient(#C10707, #9B1212, #B20505)';
-				document.getElementById('c').style.background = 'radial-gradient(#C10707, #9B1212, #B20505)';
-				document.getElementById('d').style.background = 'radial-gradient(#C10707, #9B1212, #B20505)';
-				document.getElementById('e').style.background = 'radial-gradient(#C10707, #9B1212, #B20505)';
-				document.getElementById('f').style.background = 'radial-gradient(#C10707, #9B1212, #B20505)';
-				document.getElementById('g').style.background = 'radial-gradient(#C10707, #9B1212, #B20505)';
+				document.getElementById('player').style.color = '#720303';
+				document.getElementById('a').style.backgroundColor = '#720303';
+				document.getElementById('b').style.backgroundColor = '#720303';
+				document.getElementById('c').style.backgroundColor = '#720303';
+				document.getElementById('d').style.backgroundColor = '#720303';
+				document.getElementById('e').style.backgroundColor = '#720303';
+				document.getElementById('f').style.backgroundColor = '#720303';
+				document.getElementById('g').style.backgroundColor = '#720303';
+				document.getElementById('a').style.background = 'radial-gradient(#720303, #720303, #AA0808)';
+				document.getElementById('b').style.background = 'radial-gradient(#720303, #720303, #AA0808)';
+				document.getElementById('c').style.background = 'radial-gradient(#720303, #720303, #AA0808)';
+				document.getElementById('d').style.background = 'radial-gradient(#720303, #720303, #AA0808)';
+				document.getElementById('e').style.background = 'radial-gradient(#720303, #720303, #AA0808)';
+				document.getElementById('f').style.background = 'radial-gradient(#720303, #720303, #AA0808)';
+				document.getElementById('g').style.background = 'radial-gradient(#720303, #720303, #AA0808)';
 				console.log('Next turn: ' + this.currentPlayer + ' (Red!)');
 				break;
 
@@ -594,13 +594,13 @@ class game {
 				document.getElementById('e').style.backgroundColor = '#000000';
 				document.getElementById('f').style.backgroundColor = '#000000';
 				document.getElementById('g').style.backgroundColor = '#000000';
-				document.getElementById('a').style.background = 'radial-gradient(#141414, #000000, #3A3A3A)';
-				document.getElementById('b').style.background = 'radial-gradient(#141414, #000000, #3A3A3A)';
-				document.getElementById('c').style.background = 'radial-gradient(#141414, #000000, #3A3A3A)';
-				document.getElementById('d').style.background = 'radial-gradient(#141414, #000000, #3A3A3A)';
-				document.getElementById('e').style.background = 'radial-gradient(#141414, #000000, #3A3A3A)';
-				document.getElementById('f').style.background = 'radial-gradient(#141414, #000000, #3A3A3A)';
-				document.getElementById('g').style.background = 'radial-gradient(#141414, #000000, #3A3A3A)';
+				document.getElementById('a').style.background = 'radial-gradient(#000000, #0C0C0C, #383838)';
+				document.getElementById('b').style.background = 'radial-gradient(#000000, #0C0C0C, #383838)';
+				document.getElementById('c').style.background = 'radial-gradient(#000000, #0C0C0C, #383838)';
+				document.getElementById('d').style.background = 'radial-gradient(#000000, #0C0C0C, #383838)';
+				document.getElementById('e').style.background = 'radial-gradient(#000000, #0C0C0C, #383838)';
+				document.getElementById('f').style.background = 'radial-gradient(#000000, #0C0C0C, #383838)';
+				document.getElementById('g').style.background = 'radial-gradient(#000000, #0C0C0C, #383838)';
 				console.log('Next turn: ' + this.currentPlayer + ' (Black!)');
 				break;
 
