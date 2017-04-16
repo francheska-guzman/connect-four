@@ -6,8 +6,9 @@
 
 Connect Four is a two-player game board in which the players take turns dropping tokens from the top into a seven-column, six-row vertically suspended grid. The pieces fall straight down, occupying the next available space within the column. The objective of the game is to be the first to form an horizontal, vertical, or diagonal line of four of one's own token.
 
-#### [Page Deployed on GitHub] (https://github.com/gffrancheska/connectfour)
-#### [My Repository] (https://github.com/gffrancheska/connectfour)
+[Page Deployed on GitHub] (https://github.com/gffrancheska/connectfour)
+
+[My Repository] (https://github.com/gffrancheska/connectfour)
 
 ### Technologies used
 
@@ -51,7 +52,9 @@ After understand the logic of the game, I expand the game to a 7 x 6 grid (array
 
 ### Unsolved problems
 
-Not unsolved problems related to the functionalty of the game. But there are a some details that I would like to add. For example:
+Not unsolved problems related to the functionalty of the game! :)  
+
+But there are some details that I would like to add. For example:
 
 * Add animation to the tokens, so they fall straight down to the next available space.
 * Add animation to the winner combination. I have an idea about how do it. But I think that the way I did to check combinations is not the best to add animation. I manually write each combination, and I'm pretty sure that I can also do that with a for loop. Using a for loop is more easy do detect the combination and use DOM to manipulate the style of the winner combination.
