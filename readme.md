@@ -2,7 +2,7 @@
 
 # GA Project #1: The Game
 
-![Connect Four](/images/originalC4.png")
+![Connect Four](/images/originalC4.png)
 
 ## Connect Four, The Classic Vertical Four-In-A-Row Game
 
