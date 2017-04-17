@@ -257,6 +257,8 @@ class game {
 
 	this.count += 1; // Sum 1 on every move, until reach 42 (maximum moves).
 
+	console.log('Available spaces: ' + this.board.length + this.count);
+
 	// Horizontal combinations Row 1
 
 	if 	 ((((this.board[0] 	=== this.color) && (this.board[1]) 	=== this.color)
