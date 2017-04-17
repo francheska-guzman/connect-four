@@ -35,12 +35,11 @@ After understand the logic of the game, I expand the game to a 7 x 6 grid (array
 
 ### User stories
 
-* 'How to Play' instructions are available before start the game.
-* User have to press the 'Start' button to play. 
-* While the game is in progress, the start button change to a 'Reset' button.
-* Display player's turn.
-* If one of the players won, or if it's a tie, the page displays a message.
-* When the game end, players are not able to make more moves.
+* As a user, I want the instructions to play the game.
+* As a user, I want to press 'Start' before play.
+* As a user, while playing, I want a 'Reset' button.
+* As a user, while playing, I want I want to see the player's turn.
+* As a user, I would like to get a message when one of the players won, or if it's a tie.
 
 ### How-to-use instructions
 
@@ -59,3 +58,10 @@ But there are some details that I would like to add. For example:
 * Add animation to the tokens, so they fall straight down to the next available space.
 * Add animation to the winner combination. I have an idea about how do it. But I think that the way I did to check combinations is not the best to add animation. I manually write each combination, and I'm pretty sure that I can also do that with a for loop. Using a for loop is more easy do detect the combination and use DOM to manipulate the style of the winner combination.
 * When click reset, all the tokens in the board game fall (like the real Connect Four!), and the grid remain empty.
+
+|   Component   |  Estimated Time  | % Complete  |  Actual Time
+| ------------- |:-------------:| -----:| -----:|
+| Initialization  |  3  |     100%    |2     
+| Playing         | 18  |     100%    |31     
+| Winning         |  6  |     100%    |5      
+| Reset           |  3  |     100%    |2      
