@@ -23,7 +23,25 @@ I decided to not use jQuery, because this is my very first project in GA, and I 
 
 ### Approach taken
 
-I started by writting a pseudocode. Then, instead create a 7 x 6 grid (like the original Connect Four), I started with a 4 x 4 grid to be able to figured out the logic of the game, and make the necessary changes easier.  
+I started by writting a pseudocode:
+
+1. Create a function to call the class, and add an eventlistener to the tokens.
+
+2. Create a class with:
+	* An array of 42 nulls (null means available space).
+	* A variable count, that start in 0.
+	* A variable player that alternate from player 1 to player 2 after every move.
+	* A variable color for the current player.
+	* A boolean that check if the game end or still in progress.
+
+3. Create a method that when user press a token, check which column correspond to that token.
+4. Check from the bottom to the top of the array, if it have an available space (null). 
+5. If a column is full, remove eventlistener. User doesn't loose the turn.
+6. If it's null, check from the bottom to the top of the circle of that column, if have no background color.
+7. Check if the player is black or red and add background color of the corresponding player to the circle.
+8. Then, go to the result method and check if player is a winner or tie, otherwise continue the game by calling the function to switch player.
+
+Instead create a 7 x 6 grid (like the original Connect Four), I started with a 4 x 4 grid, to be able to figured out the logic of the game and make the necessary changes easier to get the functionality.  
 
 As you can see in the console log, there is an array with a length of 16:
 
