@@ -33,6 +33,8 @@ After understand the logic of the game, I expand the game to a 7 x 6 grid (array
 
 ![Original Connect Four](/images/c4part2.png)
 
+I played a lot with display "none" properties and opacity.  Everything is contained in a single page, but looks like three pages.
+
 ### User stories
 
 * As a user, I want an option to access the how to play instructions.
@@ -43,7 +45,7 @@ After understand the logic of the game, I expand the game to a 7 x 6 grid (array
 
 ### How-to-use instructions
 
-1. User is able to read instructions or start the game.
+1. From the very beginning, user is able to read instructions or start the game.
 2. When user click 'Start', the button change to 'Reset'.
 3. The first player move the mouse at the top of the grid, and click over the token corresponding to the desired column. Players will alternate turns after every move.
 4. One of the players won if form an horizontal, vertical, or diagonal line of four of one's own tokens. 
