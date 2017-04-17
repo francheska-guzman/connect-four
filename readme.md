@@ -8,9 +8,9 @@
 
 Connect Four is a two-player game board in which the players take turns dropping tokens from the top into a seven-column, six-row vertically suspended grid. The pieces fall straight down, occupying the next available space within the column. The objective of the game is to be the first to form an horizontal, vertical, or diagonal line of four of one's own token.
 
-[Page Deployed on GitHub] (https://github.com/gffrancheska/connectfour)
+[Page Deployed on GitHub]: (https://github.com/gffrancheska/connectfour)
 
-[My Repository] (https://github.com/gffrancheska/connectfour)
+[My Repository]: (https://github.com/gffrancheska/connectfour)
 
 ### Technologies used
 
@@ -23,7 +23,7 @@ I decided to not use jQuery, because this is my very first project in GA, and I 
 
 ### Approach taken
 
-I started by writting a pseudocode.  Then, instead create a 7 x 6 grid (like the original Connect Four), I started with a 4 x 4 grid to be able to figured out the logic of the game, and make the necessary changes easier.  
+I started by writting a pseudocode. Then, instead create a 7 x 6 grid (like the original Connect Four), I started with a 4 x 4 grid to be able to figured out the logic of the game, and make the necessary changes easier.  
 
 As you can see in the console log, there is an array with a length of 16:
 
@@ -38,7 +38,7 @@ After understand the logic of the game, I expand the game to a 7 x 6 grid (array
 * As a user, I want an option to access the how to play instructions.
 * As a user, I want to press the 'Start' button before play (it's a way to confirm that I'm ready to play).
 * As a user, while playing, I want a 'Reset' button.
-* As a user, I want I want to see the player's turn.
+* As a user, I want to see the player's turn.
 * As a user, I would like to get a message when one of the players won, or if it's a tie.
 
 ### How-to-use instructions
