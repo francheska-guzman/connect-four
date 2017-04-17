@@ -2,6 +2,8 @@
 
 # GA Project #1: The Game
 
+![Connect Four](/images/originalC4.png")
+
 ## Connect Four, The Classic Vertical Four-In-A-Row Game
 
 Connect Four is a two-player game board in which the players take turns dropping tokens from the top into a seven-column, six-row vertically suspended grid. The pieces fall straight down, occupying the next available space within the column. The objective of the game is to be the first to form an horizontal, vertical, or diagonal line of four of one's own token.
