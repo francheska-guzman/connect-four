@@ -43,11 +43,11 @@ After understand the logic of the game, I expand the game to a 7 x 6 grid (array
 
 ### How-to-use instructions
 
-1. Decide who plays first. The player 1 will be identified with the black token, while the player 2 with the red token.
-2. Players will alternate turns after every move. Because is a 7 x 6 grid (42 available spaces), the maximum moves per player is 21.
-3. On your turn, go to the top of the grid, and click over the token corresponding to the desired column.
-4. The game automatically stops after one of the player's won, or if it's a tie.
-5. To play again, click 'Reset' and then press 'Start'.
+1. User is able to read instructions or start the game.
+2. When user click 'Start', the button change to 'Reset'.
+3. The first player move the mouse at the top of the grid, and click over the token corresponding to the desired column. Players will alternate turns after every move.
+4. One of the players won if form an horizontal, vertical, or diagonal line of four of one's own tokens. 
+5. To play again, user have to click the 'Reset' button and then, 'Start'.
 
 ### Unsolved problems
 
