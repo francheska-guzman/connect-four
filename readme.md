@@ -40,8 +40,6 @@ After understand the logic of the game, I expand the game to a 7 x 6 grid (array
 * If one of the players won, or if it's a tie, the page displays a message.
 * When the game end, players are not able to make more moves.
 
-### Wireframes
-
 ### How-to-use instructions
 
 1. Decide who plays first. The player 1 will be identified with the black token, while the player 2 with the red token.
