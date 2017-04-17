@@ -256,8 +256,8 @@ class game {
 	console.log(this.board); // Print the array in the console log. Show the available spaces (null), if any, and position of red and black tokens.
 
 	this.count += 1; // Sum 1 on every move, until reach 42 (maximum moves).
-
-	console.log('Available spaces: ' + this.board.length + this.count);
+	let i = 42 - this.count;
+	console.log('Available spaces: ' + i);
 
 	// Horizontal combinations Row 1
 
