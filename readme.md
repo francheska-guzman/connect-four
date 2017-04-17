@@ -27,9 +27,9 @@ I started by writting a pseudocode:
 
 1. Create a class with:
 	* An array of 42 nulls (null means available space).
-	* A variable count, that start in 0.
-	* A variable player that alternate from player 1 to player 2 after every move.
-	* A variable color for the current player.
+	* A variable "count", that start in 0.
+	* A variable "current player" that alternate from player 1 to player 2 after every move.
+	* A variable "color" for the current player.
 	* A boolean that check if the game end or still in progress.
 
 2. Create a function to call the class, and add an eventlistener to the tokens.
