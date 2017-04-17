@@ -35,10 +35,10 @@ After understand the logic of the game, I expand the game to a 7 x 6 grid (array
 
 ### User stories
 
-* As a user, I want the instructions to play the game.
-* As a user, I want to press 'Start' before play.
+* As a user, I want an option to access the how to play instructions.
+* As a user, I want to press the 'Start' button before play (it's a way to confirm that I'm ready to play).
 * As a user, while playing, I want a 'Reset' button.
-* As a user, while playing, I want I want to see the player's turn.
+* As a user, I want I want to see the player's turn.
 * As a user, I would like to get a message when one of the players won, or if it's a tie.
 
 ### How-to-use instructions
