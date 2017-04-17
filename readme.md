@@ -38,11 +38,11 @@ I started by writting a pseudocode:
 
 4. Check from the bottom to the top of the array, if it have an available space (null). 
 
-5. If a column is full, remove eventlistener. User doesn't loose the turn.
+5. If a column is full, remove eventlistener. User doesn't loose the turn if press the token.
 
-6. If it's null, check from the bottom to the top of the circle of that column, if have no background color.
+6. If it's null, then check from the bottom to the top of corresponding column, if the circle have no background color.
 
-7. Check if the player is black or red and add background color of the corresponding player to the circle.
+7. Check if the player is black or red, and add background color of the corresponding player to the circle.
 
 8. Then, go to the result method and check if player is a winner or tie, otherwise continue the game by calling the function to switch player.
 
