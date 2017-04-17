@@ -63,5 +63,7 @@ But there are some details that I would like to add. For example:
 | ------------- |:-------------:| -----:| -----:|
 | Initialization  |  3  |     100%    |2     
 | Playing         | 18  |     100%    |31     
-| Winning         |  6  |     100%    |5      
-| Reset           |  3  |     100%    |2      
+| Winning         |  6  |     100%    |6     
+| Reset           |  3  |     100%    |2 
+
+ 
