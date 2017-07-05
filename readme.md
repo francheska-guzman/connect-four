@@ -12,7 +12,7 @@ Connect Four is a two-player game board in which the players take turns dropping
 
 [My Repository]: (https://github.com/gffrancheska/connectfour)
 
-### Technologies used
+### Technologies Used
 
 * HTML 
 * CSS
@@ -21,7 +21,7 @@ Connect Four is a two-player game board in which the players take turns dropping
 
 I decided to not use jQuery, because this is my very first project in GA, and I wanted to mastering my skills in Vanilla JavaScript, before implementing libraries like jQuery. The use of Vanilla JavaScript, allowed me to understand better what's happening in the code. For the next projects, I will be more open to use other technologies like jQuery.
 
-### Approach taken
+### Approach Taken
 
 I started by writting a pseudocode:
 
@@ -58,7 +58,7 @@ After understand the logic of the game, I expand the game to a 7 x 6 grid (array
 
 I played a lot with display "none" properties and opacity.  Everything is contained in a single page, but looks like three pages.
 
-### User stories
+### User Stories
 
 * As a user, I want an option to access the how to play instructions.
 * As a user, I want to press the 'Start' button before play (it's a way to confirm that I'm ready to play).
@@ -66,7 +66,7 @@ I played a lot with display "none" properties and opacity.  Everything is contai
 * As a user, I want to see the player's turn.
 * As a user, I would like to get a message when one of the players won, or if it's a tie.
 
-### How-to-use instructions
+### How To Use
 
 1. From the very beginning, user is able to read instructions or start the game.
 2. When user click 'Start', the button change to 'Reset'.
@@ -74,15 +74,13 @@ I played a lot with display "none" properties and opacity.  Everything is contai
 4. One of the players won if form an horizontal, vertical, or diagonal line of four of one's own tokens. 
 5. To play again, user have to click the 'Reset' button and then, 'Start'.
 
-### Unsolved problems
-
-Not unsolved problems related to the functionalty of the game! :)  
-
-But there are some details that I would like to add. For example:
+### Post MVP
 
 * Add animation to the tokens, so they fall straight down to the next available space.
 * Add animation to the winner combination. I have an idea about how do it. But I think that the way I did to check combinations is not the best to add animation. I manually write each combination, and I'm pretty sure that I can also do that with a for loop. Using a for loop is more easy do detect the combination and use DOM to manipulate the style of the winner combination.
 * When click reset, all the tokens in the board game fall (like the real Connect Four!), and the grid remain empty.
+
+### Time Management
 
 |   Component   |  Estimated Time  | % Complete  |  Actual Time
 | ------------- |:-------------:| -----:| -----:|
