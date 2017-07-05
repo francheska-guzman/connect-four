@@ -2,9 +2,7 @@
 
 body {
 	margin: 0 auto;
-	background: radial-gradient(#FFFFFF, #FFFFFF, #99BBD8); 
-	background-repeat: no-repeat; 
-	background-size: 100%;
+	background: radial-gradient(#FFFFFF, #FFFFFF, #99BBD8);
 }
 
 /*                          */
@@ -236,21 +234,6 @@ input {
 }
 
 /*                          */
-/*                          */
-/*         Animation        */
-/*                          */
-/*                          */
-
-@keyframes changeSize {
-    0% {
-    	font-size: 18px;
-    }
-    50% {
-    	font-size: 22px;
-    }
-}
-
-/*                          */
 /*       Media Queries      */
 /*    (Responsive Design)   */
 /*                          */
@@ -308,13 +291,5 @@ input {
 	height: 30px;
 	margin: 5px 6px 5px 6px;
 	}
-
-	@keyframes changeSize {
-    0% {
-    	font-size: 16px;
-    }
-    50% {
-    	font-size: 16px;
-    }
   } /* Basically remove keyframe. */
 }
