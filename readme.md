@@ -1,4 +1,4 @@
-##### Francheska Guzman | General Assembly's Project 1
+General Assembly | Project 1
 
 # Connect Four
 
