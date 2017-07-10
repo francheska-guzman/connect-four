@@ -1,10 +1,12 @@
-##### Francheska Guzman
+##### Francheska Guzman | General Assembly's Project 1
 
-# GA Project #1: The Game
+# Connect Four
 
 ![Connect Four](/images/originalC4.png)
 
 ## Connect Four, The Classic Vertical Four-In-A-Row Game
+
+### Description
 
 Connect Four is a two-player game board in which the players take turns dropping tokens from the top into a seven-column, six-row vertically suspended grid. The pieces fall straight down, occupying the next available space within the column. The objective of the game is to be the first to form an horizontal, vertical, or diagonal line of four of one's own token.
 
@@ -16,7 +18,7 @@ Connect Four is a two-player game board in which the players take turns dropping
 
 * HTML 
 * CSS
-* Vanilla JavaScript
+* JavaScript
 * Google Chrome Developer Tools
 
 I decided to not use jQuery, because this is my very first project in GA, and I wanted to mastering my skills in Vanilla JavaScript, before implementing libraries like jQuery. The use of Vanilla JavaScript, allowed me to understand better what's happening in the code. For the next projects, I will be more open to use other technologies like jQuery.
