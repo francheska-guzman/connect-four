@@ -2,6 +2,10 @@
 
 body {
 	margin: 0 auto;
+	background: #99BBD8; /* For browsers that do not support gradients */    
+    background: -webkit-radial-gradient(#FFFFFF, #FFFFFF, #99BBD8); /* Safari 5.1 to 6.0 */
+    background: -o-radial-gradient(#FFFFFF, #FFFFFF, #99BBD8); /* For Opera 11.6 to 12.0 */
+    background: -moz-radial-gradient(#FFFFFF, #FFFFFF, #99BBD8); /* For Firefox 3.6 to 15 */
 	background: radial-gradient(#FFFFFF, #FFFFFF, #99BBD8);
 }
 
