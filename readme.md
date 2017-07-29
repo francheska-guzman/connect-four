@@ -13,6 +13,7 @@
 5. [How to use](#instructions)
 6. [Post MVP](#post-mvp)
 7. [Technologies used](#technologies-used)
+8. [Cross-browser compatibility](#compatibility)
 
 ## <a id="about">About the project</a>
 
@@ -95,3 +96,13 @@ I played a lot with display "none" properties and opacity.  Everything is contai
 * Google Chrome Developer Tools
 
 I decided to not use jQuery, because this is my very first project in GA, and I wanted to mastering my skills in Vanilla JavaScript, before implementing libraries like jQuery. The use of Vanilla JavaScript, allowed me to understand better what's happening in the code. For the next projects, I will be more open to use other technologies like jQuery.
+
+## <a id="compatibility">Cross-browser compatibility</a>
+
+This site has been tested in the following browsers:
+
+Chrome – Version 59.0.3071.115 
+
+Firefox – Version 54.0.1
+
+Safari – Version 9.1.2
