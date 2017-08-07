@@ -1,4 +1,4 @@
-# <a id="project">Connect Four</a>
+# <a name="project">Connect Four</a>
 
 ![Connect Four](/images/originalC4.png)
 
@@ -14,22 +14,19 @@
 6. [Post MVP](#post-mvp)
 7. [Technologies used](#technologies-used)
 8. [Cross-browser compatibility](#compatibility)
+9. [How to see](#deployment)
 
-## <a id="about">About the project</a>
+## <a name="about">About the project</a>
 
 General Assembly's Web Development Immersive <br />
 Project 1 <br />
 Developed by Francheska Guzman
 
-## <a id="description">Description</a>
+## <a name="description">Description</a>
 
 Connect Four is a two-player game board in which the players take turns dropping tokens from the top into a seven-column, six-row vertically suspended grid. The pieces fall straight down, occupying the next available space within the column. The objective of the game is to be the first to form an horizontal, vertical, or diagonal line of four of one's own token.
 
-[Page Deployed on GitHub]: (https://github.com/gffrancheska/connectfour)
-
-[My Repository]: (https://github.com/gffrancheska/connectfour)
-
-## <a id="user-stories">User stories</a>
+## <a name="user-stories">User stories</a>
 
 * As a user, I want an option to access the how to play instructions.
 * As a user, I want to press the 'Start' button before play (it's a way to confirm that I'm ready to play).
@@ -37,7 +34,7 @@ Connect Four is a two-player game board in which the players take turns dropping
 * As a user, I want to see the player's turn.
 * As a user, I would like to get a message when one of the players won, or if it's a tie.
 
-## <a id="approach-taken">Approach taken</a>
+## <a name="approach-taken">Approach taken</a>
 
 I started by writting a pseudocode:
 
@@ -74,7 +71,7 @@ After understand the logic of the game, I expand the game to a 7 x 6 grid (array
 
 I played a lot with display "none" properties and opacity.  Everything is contained in a single page, but looks like three pages.
 
-## <a id="instructions">How to use</a>
+## <a name="instructions">How to use</a>
 
 1. From the very beginning, user is able to read instructions or start the game.
 2. When user click 'Start', the button change to 'Reset'.
@@ -82,13 +79,13 @@ I played a lot with display "none" properties and opacity.  Everything is contai
 4. One of the players won if form an horizontal, vertical, or diagonal line of four of one's own tokens. 
 5. To play again, user have to click the 'Reset' button and then, 'Start'.
 
-## <a id="post-mvp">Post MVP</a>
+## <a name="post-mvp">Post MVP</a>
 
 * Add animation to the tokens, so they fall straight down to the next available space.
 * Add animation to the winner combination. I have an idea about how do it. But I think that the way I did to check combinations is not the best to add animation. I manually write each combination, and I'm pretty sure that I can also do that with a for loop. Using a for loop is more easy do detect the combination and use DOM to manipulate the style of the winner combination.
 * When click reset, all the tokens in the board game fall (like the real Connect Four!), and the grid remain empty.
 
-## <a id="technologies-used">Technologies used</a>
+## <a name="technologies-used">Technologies used</a>
 
 * HTML 
 * CSS
@@ -97,7 +94,7 @@ I played a lot with display "none" properties and opacity.  Everything is contai
 
 I decided to not use jQuery, because this is my very first project in GA, and I wanted to mastering my skills in Vanilla JavaScript, before implementing libraries like jQuery. The use of Vanilla JavaScript, allowed me to understand better what's happening in the code. For the next projects, I will be more open to use other technologies like jQuery.
 
-## <a id="compatibility">Cross-browser compatibility</a>
+## <a name="compatibility">Cross-browser compatibility</a>
 
 This site has been tested in the following browsers:
 
@@ -106,5 +103,9 @@ Chrome – Version 59.0.3071.115
 Firefox – Version 54.0.1
 
 Safari – Version 9.1.2
+
+## <a name="deployment">See the project</a>
+
+### [https://francheska-guzman.github.io/connect-four](https://francheska-guzman.github.io/connect-four)
 
 #### [Go back to the Table of Contents](#project)
