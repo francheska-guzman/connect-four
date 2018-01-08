@@ -173,6 +173,19 @@ p {
 	background-color: #E6F0F7;
 }
 
+.by-text {
+	padding: 40px;
+}
+
+a {
+	color: #CCAD14;
+	text-decoration: none;
+}
+
+a:hover {
+	color: #d6b92a;
+}
+
 /*                          */
 /*                          */
 /*     Buttons / Tokens     */
