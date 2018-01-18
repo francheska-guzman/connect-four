@@ -79,8 +79,6 @@ I played a lot with display "none" properties and opacity.  Everything is contai
 4. One of the players won if form an horizontal, vertical, or diagonal line of four of one's own tokens. 
 5. To play again, user have to click the 'Reset' button and then, 'Start'.
 
-![Video](/images/how-to-play.mov)
-
 ## <a name="post-mvp">Post MVP</a>
 
 * Add animation to the tokens, so they fall straight down to the next available space.
